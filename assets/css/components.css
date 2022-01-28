@@ -1,15 +1,11 @@
+@import url('../css/reset.css');
+
+@import url('../../Components/Alert/alert.css');
 @import url('../../Components/Avatar/avatar.css');
 @import url('../../Components/Badge/badge.css');
+@import url('../../Components/Button/button.css');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
-
-* {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    /* font-size: 62.5%; */
-    margin: 0;
-    padding: 0;
-}
 
 :root {
     --primary-color: #0d6efd;
