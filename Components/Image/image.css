@@ -1,0 +1,16 @@
+.image-responsive {
+    display: block; /* to remove extra space below image */
+    max-width: 100%;
+}
+
+.image-size-25 {
+    max-width: 25%;
+}
+
+.image-size-50 {
+    max-width: 50%;
+}
+
+.image-size-75 {
+    max-width: 75%;
+}
