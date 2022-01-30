@@ -1,0 +1,78 @@
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    height: min-content;
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 20rem;
+}
+
+.card-header {
+    margin: 1rem 0;
+}
+
+.card-body {
+    margin: 1rem 0;
+}
+
+.card-footer {
+    margin: 1rem 0;
+}
+
+.card-menubar {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+    margin: 1rem 0;
+}
+
+.card-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 43rem;
+}
+
+.card-left-content,
+.card-right-content {
+    max-width: 20rem;
+}
+
+.card-relative {
+    display: inline-block;
+    position: relative;
+}
+
+.card-text-overlay {
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+
+.cards-combined {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 900px) {
+    .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cards-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
