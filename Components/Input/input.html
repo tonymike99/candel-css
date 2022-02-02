@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CandelCSS Input Component</title>
+        <link rel="stylesheet" href="/assets/css/components.css" />
+        <script
+            src="https://kit.fontawesome.com/dc21c76de2.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <!-- INPUT -->
+
+        <section>
+            <!-- TEXTBOX -->
+
+            <div class="container">
+                <form action="">
+                    <div class="form-element">
+                        <label for="emailInput"
+                            ><small class="text-muted"> Email Address</small>
+                        </label>
+                        <input type="email" id="emailInput" />
+                    </div>
+                    <div class="form-element">
+                        <label for="passwordInput"
+                            ><small class="text-muted"> Password</small></label
+                        >
+                        <input type="password" id="passwordInput" />
+                    </div>
+                    <div class="form-element">
+                        <button class="btn btn-primary" type="submit">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+
+                <form action="">
+                    <div class="form-element">
+                        <label class="floating-label" for="emailInput"
+                            ><small class="text-muted"> Email Address</small>
+                        </label>
+                        <input type="email" id="emailInput" />
+                    </div>
+                    <div class="form-element">
+                        <label class="floating-label" for="passwordInput"
+                            ><small class="text-muted"> Password</small></label
+                        >
+                        <input type="password" id="passwordInput" />
+                    </div>
+                    <div class="form-element">
+                        <button class="btn btn-primary" type="submit">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- WITH VALIDATION AND ERRORS STYLE -->
+
+            <div class="container">
+                <form action="">
+                    <div class="form-element">
+                        <label for="emailInput"
+                            ><small class="text-danger"> Email Address *</small>
+                        </label>
+                        <input
+                            class="input-border-danger"
+                            type="email"
+                            id="emailInput"
+                            required
+                        />
+                    </div>
+                    <div class="form-element">
+                        <label for="passwordInput"
+                            ><small class="text-danger">
+                                Password *</small
+                            ></label
+                        >
+                        <input
+                            class="input-border-danger"
+                            type="password"
+                            id="passwordInput"
+                            required
+                        />
+                    </div>
+                    <div class="form-element">
+                        <button class="btn btn-primary" type="submit">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+
+                <form action="">
+                    <div class="form-element">
+                        <label class="floating-label" for="emailInput"
+                            ><small class="text-danger"> Email Address *</small>
+                        </label>
+                        <input
+                            class="input-border-danger"
+                            type="email"
+                            id="emailInput"
+                            required
+                        />
+                    </div>
+                    <div class="form-element">
+                        <label class="floating-label" for="passwordInput"
+                            ><small class="text-danger">
+                                Password *</small
+                            ></label
+                        >
+                        <input
+                            class="input-border-danger"
+                            type="password"
+                            id="passwordInput"
+                            required
+                        />
+                    </div>
+                    <div class="form-element">
+                        <button class="btn btn-primary" type="submit">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
