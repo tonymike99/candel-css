@@ -1,0 +1,34 @@
+.form-element {
+    display: inline-block;
+    margin: 1rem;
+    position: relative;
+}
+
+label,
+input {
+    display: block;
+    margin: 10px 0;
+}
+
+input {
+    font-size: medium;
+    padding: 5px;
+}
+
+.floating-label {
+    background-color: white;
+    font-size: small;
+    font-weight: bold;
+    left: 5%;
+    padding: 0 5px;
+    position: absolute;
+    top: -15%;
+}
+
+.input-border-danger {
+    border-color: var(--danger-color);
+}
+
+.text-danger {
+    color: var(--danger-color);
+}
