@@ -7,42 +7,50 @@
     text-align: center;
 }
 
-.btn-primary {
+.btn-primary,
+.btn-primary-outline:hover {
     background-color: var(--primary-color);
     color: var(--light-color);
 }
 
-.btn-secondary {
+.btn-secondary,
+.btn-secondary-outline:hover {
     background-color: var(--secondary-color);
     color: var(--light-color);
 }
 
-.btn-success {
+.btn-success,
+.btn-success-outline:hover {
     background-color: var(--success-color);
     color: var(--light-color);
 }
 
-.btn-danger {
+.btn-danger,
+.btn-danger-outline:hover {
     background-color: var(--danger-color);
     color: var(--light-color);
 }
 
-.btn-warning {
+.btn-warning,
+.btn-warning-outline:hover {
     background-color: var(--warning-color);
     color: var(--dark-color);
 }
 
-.btn-info {
+.btn-info,
+.btn-info-outline:hover {
     background-color: var(--info-color);
     color: var(--light-color);
 }
 
-.btn-light {
+.btn-light,
+.btn-light-outline:hover {
     background-color: var(--light-color);
     color: var(--dark-color);
 }
 
-.btn-dark {
+.btn-dark,
+.btn-dark-outline:hover {
     background-color: var(--dark-color);
     color: var(--light-color);
 }
@@ -80,9 +88,51 @@
 }
 
 .btn-link {
+    font-weight: unset;
     text-decoration: none;
 }
 
 .btn-link:hover {
+    background-color: unset;
     color: var(--primary-hover);
+}
+
+.btn-primary-outline {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-secondary-outline {
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.btn-success-outline {
+    border: 1px solid var(--success-color);
+    color: var(--success-color);
+}
+
+.btn-danger-outline {
+    border: 1px solid var(--danger-color);
+    color: var(--danger-color);
+}
+
+.btn-warning-outline {
+    border: 1px solid var(--warning-color);
+    color: var(--warning-color);
+}
+
+.btn-info-outline {
+    border: 1px solid var(--info-color);
+    color: var(--info-color);
+}
+
+.btn-light-outline {
+    border: 1px solid var(--light-color);
+    color: var(--muted-color);
+}
+
+.btn-dark-outline {
+    border: 1px solid var(--dark-color);
+    color: var(--dark-color);
 }
