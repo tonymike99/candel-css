@@ -1,47 +1,48 @@
-@import url('../css/reset.css');
+@import url('/assets/css/reset.css');
+@import url('/assets/css/styles-default.css');
 
-@import url('../../Components/Alert/alert.css');
-@import url('../../Components/Avatar/avatar.css');
-@import url('../../Components/Badge/badge.css');
-@import url('../../Components/Button/button.css');
-@import url('../../Components/Card/card.css');
-@import url('../../Components/Image/image.css');
-@import url('../../Components/Input/input.css');
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
-
-:root {
-    --primary-color: #0d6efd;
-    --secondary-color: #6c757d;
-    --success-color: #198754;
-    --danger-color: #dc3545;
-    --warning-color: #ffc107;
-    --info-color: #0dcaf0;
-    --light-color: #f8f9fa;
-    --dark-color: #212529;
-    --muted-color: #6c757d;
-
-    --primary-hover: #0b5ed7;
-    --secondary-hover: #5c636a;
-    --success-hover: #157347;
-    --danger-hover: #bb2d3b;
-    --warning-hover: #ffca2c;
-    --info-hover: #31d2f2;
-    --light-hover: #f9fafb;
-    --dark-hover: #1c1f23;
-}
+@import url('/Components/Alert/alert.css');
+@import url('/Components/Avatar/avatar.css');
+@import url('/Components/Badge/badge.css');
+@import url('/Components/Button/button.css');
+@import url('/Components/Card/card.css');
+@import url('/Components/Image/image.css');
+@import url('/Components/Input/input.css');
 
 section {
-    /* border: 3px solid black; */
     margin: 1rem;
 }
 
 .container {
-    margin: 1rem;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin: 0.5rem;
+    margin-bottom: 3rem;
+    padding: 0.5rem;
 }
 
 .margin-1 {
     margin: 1rem;
+}
+
+.margin-2 {
+    margin: 2rem;
+}
+
+.padding-1 {
+    padding: 1rem;
+}
+
+.padding-2 {
+    padding: 2rem;
+}
+
+.text-muted {
+    color: var(--muted-color);
+}
+
+.text-bold {
+    font-weight: bold;
 }
 
 .icon {
@@ -158,12 +159,4 @@ section {
 .dark-outline {
     border: 1px solid var(--dark-color);
     color: var(--dark-color);
-}
-
-.text-muted {
-    color: var(--muted-color);
-}
-
-.text-bold {
-    font-weight: bold;
 }
