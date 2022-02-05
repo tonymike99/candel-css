@@ -1,0 +1,123 @@
+@import url('/assets/css/reset.css');
+@import url('/assets/css/styles-default.css');
+@import url('/assets/css/styles-common.css');
+
+@import url('/assets/css/components.css');
+
+/* LAYOUT STYLES */
+
+.main-container {
+    grid-template-areas:
+        'header header header header header'
+        'aside main main main main'
+        'aside main main main main'
+        'aside main main main main'
+        'footer footer footer footer footer';
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.1fr repeat(3, 10fr) 0.2fr;
+    max-height: unset;
+}
+
+main {
+    display: unset;
+    /* align-items: flex-start; */
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.sidebar-vertical {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.component-title {
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.component-subtitle {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.component-description {
+    font-size: 1rem;
+    margin: 1rem;
+    max-width: 100%;
+}
+
+.main-link {
+    font-size: 1.2rem;
+}
+
+.sub-link {
+    font-weight: unset;
+}
+
+#download,
+#contribute,
+#colors {
+    margin-bottom: 2rem;
+}
+
+.download-btn,
+.contribute-btn {
+    margin-left: 1rem;
+}
+
+.color-palette {
+    display: flex;
+    height: 7.5rem;
+    margin-left: 1rem;
+}
+
+.primary,
+.secondary,
+.success,
+.danger,
+.warning,
+.info,
+.light,
+.dark,
+.muted {
+    flex-basis: 7.5rem;
+}
+
+/* COMPONENT STYLES */
+
+#card {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1024px) {
+    .main-container {
+        grid-template-areas:
+            'header header header header header'
+            'aside aside aside aside aside'
+            'main main main main main'
+            'main main main main main'
+            'footer footer footer footer footer';
+        grid-template-rows: 0.1fr 0.5fr repeat(2, 10fr) 0.2fr;
+        max-height: unset;
+    }
+
+    header {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main-container {
+        grid-template-rows: 0.1fr 0.5fr repeat(2, 5fr) 0.2fr;
+    }
+}
