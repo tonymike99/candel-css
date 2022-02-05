@@ -25,6 +25,10 @@ input {
     top: -15%;
 }
 
+.input-inline-block {
+    display: inline-block;
+}
+
 .input-border-danger {
     border-color: var(--danger-color);
 }

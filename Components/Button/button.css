@@ -92,11 +92,6 @@
     text-decoration: none;
 }
 
-.btn-link:hover {
-    background-color: unset;
-    color: var(--primary-hover);
-}
-
 .btn-primary-outline {
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
@@ -135,4 +130,8 @@
 .btn-dark-outline {
     border: 1px solid var(--dark-color);
     color: var(--dark-color);
+}
+
+.btn-floating {
+    padding: 10px 0.7rem;
 }
