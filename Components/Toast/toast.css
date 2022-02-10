@@ -1,0 +1,23 @@
+.toast {
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 10px;
+    max-width: 15rem;
+    padding: 10px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+    transition: top 0.2s, visibility 0.2s;
+    visibility: hidden;
+}
+
+.toast-visible {
+    top: 1rem;
+    visibility: visible;
+}
