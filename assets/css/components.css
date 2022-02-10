@@ -8,6 +8,8 @@
 @import url('/Components/Card/card.css');
 @import url('/Components/Image/image.css');
 @import url('/Components/Input/input.css');
+@import url('/Components/Modal/modal.css');
+@import url('/Components/Toast/toast.css');
 
 section {
     margin: 1rem;
