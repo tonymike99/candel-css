@@ -1,13 +1,11 @@
 .modal {
-    bottom: 0;
-    left: 0;
-    margin: auto;
+    left: 50%;
     opacity: 0;
     pointer-events: auto;
     position: fixed;
-    right: 0;
-    top: 0;
+    transform: translate(-50%, -50%);
     transition: opacity 0.2s ease;
+    top: 50%;
     visibility: hidden;
     z-index: -1;
 }
@@ -22,6 +20,5 @@
 .modal-overlay {
     background-color: rgba(0, 0, 0, 0.2);
     height: 100%;
-    overflow: hidden;
     pointer-events: none;
 }

@@ -7,12 +7,13 @@
 label,
 input {
     display: block;
-    margin: 10px 0;
+    margin: 1rem 0;
 }
 
 input {
-    font-size: medium;
+    font-size: large;
     padding: 5px;
+    width: 25rem;
 }
 
 .floating-label {
@@ -31,8 +32,4 @@ input {
 
 .input-border-danger {
     border-color: var(--danger-color);
-}
-
-.text-danger {
-    color: var(--danger-color);
 }

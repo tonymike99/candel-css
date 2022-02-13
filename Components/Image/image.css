@@ -1,5 +1,6 @@
 .image-responsive {
-    display: block; /* to remove extra space below image */
+    display: block;
+    max-height: 100%;
     max-width: 100%;
 }
 
@@ -13,4 +14,8 @@
 
 .image-size-75 {
     max-width: 75%;
+}
+
+.image-translucent {
+    opacity: 0.75;
 }

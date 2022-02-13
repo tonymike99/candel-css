@@ -1,13 +1,7 @@
-.badge-parent {
-    display: inline-block;
-    position: relative;
-    margin: 1rem;
-}
-
 .badge {
     background-color: var(--light-color);
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 1rem;
     font-weight: bold;
     padding: 5px;
     position: absolute;
@@ -16,65 +10,125 @@
 }
 
 .badge-sm {
-    font-size: 7.5px;
+    font-size: 0.75rem;
     padding: 3px;
 }
 
 .badge-md {
-    font-size: 10px;
+    font-size: 1rem;
     padding: 5px;
 }
 
 .badge-lg {
-    font-size: 12.5px;
+    font-size: 1.25rem;
     padding: 7px;
 }
 
-.badge-top-right {
+.badge-center {
+    bottom: unset;
+    left: 50%;
+    right: unset;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+.badge-outside-top-right {
     bottom: unset;
     left: unset;
     right: -20%;
     top: -10%;
 }
 
-.badge-top-left {
+.badge-outside-top-left {
     bottom: unset;
     left: -20%;
     right: unset;
     top: -10%;
 }
 
-.badge-bottom-right {
+.badge-outside-bottom-right {
     bottom: -10%;
     left: unset;
     right: -20%;
     top: unset;
 }
 
-.badge-bottom-left {
+.badge-outside-bottom-left {
     bottom: -10%;
     left: -20%;
     right: unset;
     top: unset;
+}
+
+.badge-inside-top-right {
+    bottom: unset;
+    left: unset;
+    right: 1rem;
+    top: 1rem;
+}
+
+.badge-inside-top-left {
+    bottom: unset;
+    left: 0;
+    right: unset;
+    top: 1rem;
+}
+
+.badge-inside-bottom-right {
+    bottom: 1rem;
+    left: unset;
+    right: 0;
+    top: unset;
+}
+
+.badge-inside-bottom-left {
+    bottom: 1rem;
+    left: 0;
+    right: unset;
+    top: unset;
+}
+
+.badge-inside-top-stretch {
+    bottom: unset;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 1rem;
+}
+
+.badge-inside-bottom-stretch {
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: unset;
+}
+
+.badge-inside-center-stretch {
+    bottom: unset;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 45%;
 }
 
 .badge-online {
     background-color: var(--warning-color);
     border: 2px solid white;
     bottom: 5%;
-    right: 7.5%;
+    right: 5%;
 }
 
 .badge-busy {
     background-color: var(--danger-color);
     border: 2px solid white;
     bottom: 5%;
-    right: 7.5%;
+    right: 5%;
 }
 
 .badge-offline {
     background-color: var(--dark-color);
     border: 2px solid white;
     bottom: 5%;
-    right: 7.5%;
+    right: 5%;
 }
