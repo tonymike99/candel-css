@@ -22,46 +22,6 @@ main {
     display: unset;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-}
-
-.sidebar-vertical {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 2.5rem;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-.component-title {
-    font-size: 4rem;
-    margin: 1.5rem 0;
-}
-
-.component-subtitle {
-    font-size: 2.5rem;
-    margin: 1.5rem 0;
-}
-
-.component-description {
-    font-size: 1.5rem;
-    line-height: 1.5;
-    margin: 1.5rem 0;
-    max-width: 100%;
-}
-
-.main-link {
-    font-size: 2rem;
-}
-
-.sub-link {
-    font-weight: unset;
-}
-
 .sub-container {
     margin-bottom: 3rem;
 }

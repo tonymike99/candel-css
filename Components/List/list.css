@@ -1,0 +1,15 @@
+.list {
+    list-style-type: none;
+}
+
+.list-spaced {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.list-stacked {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

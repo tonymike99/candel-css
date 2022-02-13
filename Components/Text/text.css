@@ -1,0 +1,53 @@
+.h1 {
+    font-size: 4.8rem;
+    line-height: 6.4rem;
+}
+
+.h2 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+}
+
+.h3 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+.h4 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.h5 {
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+    font-weight: bold;
+}
+
+.text-muted {
+    color: var(--muted-color);
+}
+
+.text-danger {
+    color: var(--danger-color);
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-small {
+    font-size: smaller;
+    line-height: 1.5;
+}
