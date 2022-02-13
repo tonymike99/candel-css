@@ -12,17 +12,18 @@
         'main main main main main'
         'footer footer footer footer footer';
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 0.4fr repeat(3, 1fr) 0.8fr;
+    grid-template-rows: 0.5fr repeat(3, 1.5fr) 1fr;
     max-height: 100vh;
 }
 
 .hero-title {
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
 }
 
 .hero-subtitle {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
     max-width: 40%;
     text-align: center;
 }
@@ -34,7 +35,18 @@
 
 @media only screen and (max-width: 1024px) {
     .main-container {
-        grid-template-rows: 0.4fr repeat(3, 0.5fr) 0.8fr;
+        grid-template-rows: 0.5fr repeat(3, 1fr) 1fr;
+    }
+
+    header {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-container {
+        grid-template-rows: 0.5fr repeat(3, 0.7fr) 1fr;
         max-height: unset;
     }
 

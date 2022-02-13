@@ -20,7 +20,6 @@
 
 main {
     display: unset;
-    /* align-items: flex-start; */
 }
 
 section {
@@ -33,69 +32,52 @@ section {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    gap: 1.5rem;
+    gap: 2.5rem;
     justify-content: space-evenly;
     list-style-type: none;
 }
 
 .component-title {
-    font-size: 2.5rem;
-    margin: 1rem;
+    font-size: 4rem;
+    margin: 1.5rem 0;
 }
 
 .component-subtitle {
-    font-size: 1.5rem;
-    margin: 1rem;
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
 }
 
 .component-description {
-    font-size: 1rem;
-    margin: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 1.5rem 0;
     max-width: 100%;
 }
 
 .main-link {
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 .sub-link {
     font-weight: unset;
 }
 
-#download,
-#contribute,
-#colors {
-    margin-bottom: 2rem;
-}
-
-.download-btn,
-.contribute-btn {
-    margin-left: 1rem;
+.sub-container {
+    margin-bottom: 3rem;
 }
 
 .color-palette {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     display: flex;
-    height: 7.5rem;
-    margin-left: 1rem;
+    flex-wrap: wrap;
+    max-width: 80rem;
 }
 
-.primary,
-.secondary,
-.success,
-.danger,
-.warning,
-.info,
-.light,
-.dark,
-.muted {
-    flex-basis: 7.5rem;
-}
-
-/* COMPONENT STYLES */
-
-#card {
-    display: flex;
-    flex-direction: column;
+.color-palette > * {
+    max-width: 20rem;
+    min-height: 10rem;
+    min-width: 10rem;
+    padding: 1rem;
 }
 
 @media only screen and (max-width: 1024px) {
