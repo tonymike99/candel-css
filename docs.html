@@ -23,7 +23,7 @@
                     <a class="brand-name" href="/index.html">Candel CSS</a>
                 </div>
                 <nav class="navbar-menu">
-                    <ul class="navbar-horizontal">
+                    <ul class="list list-spaced list-navbar">
                         <li>
                             <a class="styled-link" href="/index.html">Home</a>
                         </li>
@@ -59,7 +59,7 @@
 
             <aside>
                 <a class="main-link styled-link" href="">Get Started</a>
-                <ul class="sidebar-vertical">
+                <ul class="list list-stacked list-sidebar">
                     <li>
                         <a class="sub-link styled-link" href="#introduction"
                             >Introduction</a
@@ -91,7 +91,7 @@
                 </ul>
                 <hr class="hr-thin" />
                 <a class="main-link styled-link" href="#alert">Components</a>
-                <ul class="sidebar-vertical">
+                <ul class="list list-stacked list-sidebar">
                     <li>
                         <a class="sub-link styled-link" href="#alert">Alert</a>
                     </li>
@@ -122,6 +122,12 @@
                     </li>
                     <li>
                         <a class="sub-link styled-link" href="#toast">Toast</a>
+                    </li>
+                    <li>
+                        <a class="sub-link styled-link" href="#list">List</a>
+                    </li>
+                    <li>
+                        <a class="sub-link styled-link" href="#text">Text</a>
                     </li>
                 </ul>
             </aside>
@@ -1433,6 +1439,7 @@
 
                 <section id="image">
                     <h1 class="component-title">Image</h1>
+
                     <p class="component-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quisquam quaerat, et quae quo optio minus. Placeat eaque
@@ -1506,6 +1513,7 @@
 
                 <section id="input">
                     <h1 class="component-title">Input</h1>
+
                     <p class="component-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quisquam quaerat, et quae quo optio minus. Placeat eaque
@@ -1692,6 +1700,7 @@
 
                 <section id="modal">
                     <h1 class="component-title">Modal</h1>
+
                     <p class="component-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quisquam quaerat, et quae quo optio minus. Placeat eaque
@@ -1752,6 +1761,7 @@
 
                 <section id="toast">
                     <h1 class="component-title">Toast</h1>
+
                     <p class="component-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quisquam quaerat, et quae quo optio minus. Placeat eaque
@@ -1783,6 +1793,132 @@
                         style="
                             width: 597px;
                             height: 540px;
+                            border: 0;
+                            transform: scale(1);
+                            overflow: hidden;
+                        "
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </section>
+
+                <!-- LIST -->
+
+                <section id="list">
+                    <h1 class="component-title">List</h1>
+
+                    <p class="component-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam quaerat, et quae quo optio minus. Placeat eaque
+                        recusandae fugit, enim saepe libero facilis corrupti
+                        dolore itaque, provident dignissimos maxime quo.
+                    </p>
+
+                    <!-- SPACED LIST -->
+                    <h3 class="component-subtitle">Example of Spaced list</h3>
+
+                    <div class="container">
+                        <ul class="list list-spaced">
+                            <li class="list-item">HTML</li>
+                            <li class="list-item">CSS</li>
+                            <li class="list-item">Javascript</li>
+                            <li class="list-item">React</li>
+                            <li class="list-item">Typescript</li>
+                        </ul>
+                    </div>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cul%2520class%253D%2522list%2520list-spaced%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EHTML%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ECSS%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EJavascript%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EReact%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ETypescript%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fdiv%253E%250A"
+                        style="
+                            width: 495px;
+                            height: 372px;
+                            border: 0;
+                            transform: scale(1);
+                            overflow: hidden;
+                        "
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+
+                    <!-- STACKED LIST -->
+                    <h3 class="component-subtitle">Example of Stacked list</h3>
+
+                    <div class="container">
+                        <ul class="list list-stacked">
+                            <li class="list-item">HTML</li>
+                            <li class="list-item">CSS</li>
+                            <li class="list-item">Javascript</li>
+                            <li class="list-item">React</li>
+                            <li class="list-item">Typescript</li>
+                        </ul>
+                    </div>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cul%2520class%253D%2522list%2520list-stacked%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EHTML%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ECSS%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EJavascript%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253EReact%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253ETypescript%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fdiv%253E%250A"
+                        style="
+                            width: 495px;
+                            height: 372px;
+                            border: 0;
+                            transform: scale(1);
+                            overflow: hidden;
+                        "
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+                </section>
+
+                <!-- TEXT -->
+
+                <section id="text">
+                    <h1 class="component-title">Text</h1>
+
+                    <p class="component-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam quaerat, et quae quo optio minus. Placeat eaque
+                        recusandae fugit, enim saepe libero facilis corrupti
+                        dolore itaque, provident dignissimos maxime quo.
+                    </p>
+
+                    <!-- HEADINGS -->
+                    <h3 class="component-subtitle">Examples of Headings</h3>
+
+                    <div class="container">
+                        <p class="h1">Headline 1</p>
+                        <p class="h2">Headline 2</p>
+                        <p class="h3">Headline 3</p>
+                        <p class="h4">Headline 4</p>
+                        <p class="h5">Headline 5</p>
+                    </div>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522h1%2522%253EHeadline%25201%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522h2%2522%253EHeadline%25202%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522h3%2522%253EHeadline%25203%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522h4%2522%253EHeadline%25204%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522h5%2522%253EHeadline%25205%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A"
+                        style="
+                            width: 403px;
+                            height: 335px;
+                            border: 0;
+                            transform: scale(1);
+                            overflow: hidden;
+                        "
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+
+                    <!-- TEXT -->
+                    <h3 class="component-subtitle">Examples of Text</h3>
+
+                    <div class="container">
+                        <p class="text-muted">Text Muted/Gray</p>
+                        <p class="text-danger">Text Danger</p>
+                        <p class="text-bold">Text Bold</p>
+                        <p class="text-small">Text Small</p>
+                        <p class="text-center">Text Center</p>
+                    </div>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cp%2520class%253D%2522text-muted%2522%253EText%2520Muted%252FGray%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522text-danger%2522%253EText%2520Danger%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522text-bold%2522%253EText%2520Bold%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522text-small%2522%253EText%2520Small%253C%252Fp%253E%250A%2520%2520%253Cp%2520class%253D%2522text-center%2522%253EText%2520Center%253C%252Fp%253E%250A%253C%252Fdiv%253E%250A"
+                        style="
+                            width: 512px;
+                            height: 335px;
                             border: 0;
                             transform: scale(1);
                             overflow: hidden;
