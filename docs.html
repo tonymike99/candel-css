@@ -117,13 +117,20 @@
                     <li>
                         <a class="sub-link styled-link" href="#input">Input</a>
                     </li>
+                    <li>
+                        <a class="sub-link styled-link" href="#modal">Modal</a>
+                    </li>
+                    <li>
+                        <a class="sub-link styled-link" href="#toast">Toast</a>
+                    </li>
                 </ul>
             </aside>
 
             <main>
                 <section id="getting-started">
-                    <div id="introduction">
+                    <div class="sub-container" id="introduction">
                         <h1 class="component-title">Introduction</h1>
+
                         <p class="component-description">
                             Candel CSS is a free, open-source CSS framework that
                             provides ready-to-use frontend components to build
@@ -131,7 +138,7 @@
                         </p>
                     </div>
 
-                    <div id="usage">
+                    <div class="sub-container" id="usage">
                         <h1 class="component-title">Usage</h1>
 
                         <h3 class="component-subtitle">
@@ -146,10 +153,11 @@
                         </p>
 
                         <iframe
+                            loading="lazy"
                             src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fcandelcss.netlify.app%252Fassets%252Fcss%252Fcomponents.css%2522%253E"
                             style="
                                 width: 100%;
-                                height: 210px;
+                                height: 100%;
                                 border: 0;
                                 transform: scale(1);
                                 overflow: hidden;
@@ -164,10 +172,32 @@
                         </p>
 
                         <iframe
+                            loading="lazy"
                             src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2540import%2520url%28%2522https%253A%252F%252Fcandelcss.netlify.app%252Fassets%252Fcss%252Fcomponents.css%2522%29%253B"
                             style="
                                 width: 100%;
-                                height: 205px;
+                                height: 100%;
+                                border: 0;
+                                transform: scale(1);
+                                overflow: hidden;
+                            "
+                            sandbox="allow-scripts allow-same-origin"
+                        >
+                        </iframe>
+
+                        <p class="component-description">
+                            For certain components which needs an action and
+                            outcome, copy-paste the
+                            <code>&ltscript&gt</code> just before the
+                            <code>&ltbody&gt</code> .
+                        </p>
+
+                        <iframe
+                            loading="lazy"
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cscript%2520type%253D%2522text%252Fjavascript%2522%2520src%253D%2522https%253A%252F%252Fcandelcss.netlify.app%252Fassets%252Fjs%252Fscript.js%2522%253E%253C%252Fscript%253E"
+                            style="
+                                width: 100%;
+                                height: 100%;
                                 border: 0;
                                 transform: scale(1);
                                 overflow: hidden;
@@ -177,30 +207,30 @@
                         </iframe>
                     </div>
 
-                    <div id="download">
+                    <div class="sub-container" id="download">
                         <h1 class="component-title">Download</h1>
+
                         <p class="component-description">
                             You can download the ready-to-use compiled code for
                             Candel CSS and easily it use it in your project.
                         </p>
-                        <br />
-                        <p>
-                            <a
-                                class="btn btn-secondary-outline btn-link download-btn"
-                                href="/assets/css/components.css"
-                                target="_blank"
-                                download
-                                >Download</a
-                            >
-                        </p>
-                        <p></p>
+
+                        <a
+                            class="btn btn-secondary-outline btn-link"
+                            href="/assets/css/components.css"
+                            target="_blank"
+                            download
+                            >Download</a
+                        >
                     </div>
 
-                    <div id="colors">
+                    <div class="sub-container" id="colors">
                         <h1 class="component-title">Colors</h1>
+
                         <p class="component-description">
                             The colour palette used in Candel CSS is:
                         </p>
+
                         <div class="color-palette">
                             <div class="primary">Primary <br />#0d6efd</div>
                             <div class="secondary">Secondary <br />#6c757d</div>
@@ -213,7 +243,7 @@
                         </div>
                     </div>
 
-                    <div id="typography">
+                    <div class="sub-container" id="typography">
                         <h1 class="component-title">Typography</h1>
 
                         <p class="component-description">
@@ -222,6 +252,7 @@
                         </p>
 
                         <iframe
+                            loading="lazy"
                             src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2540import%2520url%28%27https%253A%252F%252Ffonts.googleapis.com%252Fcss2%253Ffamily%253DNunito%252BSans%253Awght%2540400%253B900%2526display%253Dswap%27%29%253B"
                             style="
                                 width: 100%;
@@ -235,26 +266,22 @@
                         </iframe>
                     </div>
 
-                    <div id="contribute">
+                    <div class="sub-container" id="contribute">
                         <h1 class="component-title">Contribute</h1>
+
                         <p class="component-description">
-                            Candel CSS is a free, open-source CSS framework.
-                            <br />
-                            To keep up with today's design requirements, we
-                            require your help too.
-                            <br />
-                            Any contribution / review / suggestion is highly
-                            appreciated.
+                            Candel CSS is a free, open-source CSS framework. To
+                            keep up with today's design requirements, we require
+                            your help too. Any contribution / review /
+                            suggestion is highly appreciated.
                         </p>
-                        <br />
-                        <p>
-                            <a
-                                class="btn btn-secondary btn-link contribute-btn"
-                                href="https://github.com/tonymike99/candel-css/pull/5"
-                                target="_blank"
-                                >Contribute</a
-                            >
-                        </p>
+
+                        <a
+                            class="btn btn-secondary btn-link"
+                            href="https://github.com/tonymike99/candel-css/pull/7"
+                            target="_blank"
+                            >Contribute</a
+                        >
                     </div>
                 </section>
 
@@ -264,6 +291,7 @@
 
                 <section id="alert">
                     <h1 class="component-title">Alert</h1>
+
                     <p class="component-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quisquam quaerat, et quae quo optio minus. Placeat eaque
@@ -295,10 +323,10 @@
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520primary%2522%253EA%2520simple%2520primary%2520alert%21%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520secondary%2522%253EA%2520simple%2520secondary%2520alert%21%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520success%2522%253EA%2520simple%2520success%2520alert%21%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520danger%2522%253EA%2520simple%2520danger%2520alert%21%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520warning%2522%253EA%2520simple%2520warning%2520alert%21%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520info%2522%253EA%2520simple%2520info%2520alert%21%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520light%2522%253EA%2520simple%2520light%2520alert%21%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520dark%2522%253EA%2520simple%2520dark%2520alert%21%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520primary%2522%253EA%2520simple%2520primary%2520alert%21%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520secondary%2522%253EA%2520simple%2520secondary%2520alert%21%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520success%2522%253EA%2520simple%2520success%2520alert%21%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520danger%2522%253EA%2520simple%2520danger%2520alert%21%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520warning%2522%253EA%2520simple%2520warning%2520alert%21%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520info%2522%253EA%2520simple%2520info%2520alert%21%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520light%2522%253EA%2520simple%2520light%2520alert%21%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520dark%2522%253EA%2520simple%2520dark%2520alert%21%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
                         style="
                             width: 672px;
-                            height: 391px;
+                            height: 521px;
                             border: 0;
                             transform: scale(1);
                             overflow: hidden;
@@ -347,10 +375,10 @@
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520primary-outline%2522%253EA%2520simple%2520primary-outline%2520alert%21%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520secondary-outline%2522%253EA%2520simple%2520secondary-outline%2520alert%21%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520success-outline%2522%253EA%2520simple%2520success-outline%2520alert%21%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520danger-outline%2522%253EA%2520simple%2520danger-outline%2520alert%21%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520warning-outline%2522%253EA%2520simple%2520warning-outline%2520alert%21%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520info-outline%2522%253EA%2520simple%2520info-outline%2520alert%21%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520light-outline%2522%253EA%2520simple%2520light-outline%2520alert%21%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520dark-outline%2522%253EA%2520simple%2520dark-outline%2520alert%21%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520primary-outline%2522%253EA%2520simple%2520primary-outline%2520alert%21%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520secondary-outline%2522%253EA%2520simple%2520secondary-outline%2520alert%21%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520success-outline%2522%253EA%2520simple%2520success-outline%2520alert%21%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520danger-outline%2522%253EA%2520simple%2520danger-outline%2520alert%21%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520warning-outline%2522%253EA%2520simple%2520warning-outline%2520alert%21%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520info-outline%2522%253EA%2520simple%2520info-outline%2520alert%21%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520light-outline%2522%253EA%2520simple%2520light-outline%2520alert%21%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520dark-outline%2522%253EA%2520simple%2520dark-outline%2520alert%21%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
                         style="
                             width: 807px;
-                            height: 391px;
+                            height: 521px;
                             border: 0;
                             transform: scale(1);
                             overflow: hidden;
@@ -366,6 +394,7 @@
 
                 <section id="avatar">
                     <h1 class="component-title">Avatar</h1>
+
                     <p class="component-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quisquam quaerat, et quae quo optio minus. Placeat eaque
@@ -381,21 +410,21 @@
                         <img
                             class="avatar"
                             src="https://unsplash.com/photos/nKZuhvCGGQU/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg&force=true&w=640"
-                            alt="avatar-1"
+                            alt="An avatar of a woman"
                         />
 
                         <img
                             class="avatar round"
                             src="https://unsplash.com/photos/nKZuhvCGGQU/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg&force=true&w=640"
-                            alt="avatar-2"
+                            alt="An avatar of a woman"
                         />
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522avatar-1%2522%250A%2520%2520%252F%253E%250A%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar%2520round%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522avatar-2%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522An%2520avatar%2520of%2520a%2520woman%2522%250A%2520%2520%252F%253E%250A%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar%2520round%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522An%2520avatar%2520of%2520a%2520woman%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A"
                         style="
                             width: 1024px;
-                            height: 465px;
+                            height: 484px;
                             border: 0;
                             transform: scale(1);
                             overflow: hidden;
@@ -412,26 +441,26 @@
                         <img
                             class="avatar sm"
                             src="https://unsplash.com/photos/nKZuhvCGGQU/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg&force=true&w=640"
-                            alt="avatar-1"
+                            alt="An avatar of a woman"
                         />
 
                         <img
                             class="avatar md"
                             src="https://unsplash.com/photos/nKZuhvCGGQU/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg&force=true&w=640"
-                            alt="avatar-2"
+                            alt="An avatar of a woman"
                         />
                         <img
                             class="avatar lg"
                             src="https://unsplash.com/photos/nKZuhvCGGQU/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg&force=true&w=640"
-                            alt="avatar-3"
+                            alt="An avatar of a woman"
                         />
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar%2520sm%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522avatar-1%2522%250A%2520%2520%252F%253E%250A%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar%2520md%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522avatar-2%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar%2520lg%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522avatar-3%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar%2520sm%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522An%2520avatar%2520of%2520a%2520woman%2522%250A%2520%2520%252F%253E%250A%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar%2520md%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522An%2520avatar%2520of%2520a%2520woman%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar%2520lg%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522An%2520avatar%2520of%2520a%2520woman%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A"
                         style="
                             width: 1024px;
-                            height: 577px;
+                            height: 596px;
                             border: 0;
                             transform: scale(1);
                             overflow: hidden;
@@ -448,26 +477,26 @@
                         <img
                             class="avatar sm round"
                             src="https://unsplash.com/photos/nKZuhvCGGQU/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg&force=true&w=640"
-                            alt="avatar-1"
+                            alt="An avatar of a woman"
                         />
 
                         <img
                             class="avatar md round"
                             src="https://unsplash.com/photos/nKZuhvCGGQU/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg&force=true&w=640"
-                            alt="avatar-2"
+                            alt="An avatar of a woman"
                         />
                         <img
                             class="avatar lg round"
                             src="https://unsplash.com/photos/nKZuhvCGGQU/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg&force=true&w=640"
-                            alt="avatar-3"
+                            alt="An avatar of a woman"
                         />
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar%2520sm%2520round%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522avatar-1%2522%250A%2520%2520%252F%253E%250A%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar%2520md%2520round%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522avatar-2%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar%2520lg%2520round%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522avatar-3%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar%2520sm%2520round%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522An%2520avatar%2520of%2520a%2520woman%2522%250A%2520%2520%252F%253E%250A%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar%2520md%2520round%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522An%2520avatar%2520of%2520a%2520woman%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522avatar%2520lg%2520round%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522An%2520avatar%2520of%2520a%2520woman%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A"
                         style="
                             width: 1024px;
-                            height: 577px;
+                            height: 596px;
                             border: 0;
                             transform: scale(1);
                             overflow: hidden;
@@ -483,6 +512,7 @@
 
                 <section id="badge">
                     <h1 class="component-title">Badge</h1>
+
                     <p class="component-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quisquam quaerat, et quae quo optio minus. Placeat eaque
@@ -496,41 +526,39 @@
                     </h3>
 
                     <div class="container">
-                        <div class="badge-parent margin-1">
-                            <span>
-                                <i class="fas fa-envelope icon icon-sm"></i>
-                            </span>
-                            <div class="badge primary badge-sm badge-top-right">
-                                10
-                            </div>
-                        </div>
-
-                        <div class="badge-parent margin-1">
-                            <span>
-                                <i class="fas fa-envelope icon icon-md"></i>
-                            </span>
+                        <div class="relative margin-1">
+                            <i class="fas fa-envelope fa-2x"></i>
                             <div
-                                class="badge secondary badge-sm badge-top-right"
+                                class="badge primary badge-sm badge-outside-top-right"
                             >
                                 10
                             </div>
                         </div>
 
-                        <div class="badge-parent margin-1">
-                            <span>
-                                <i class="fas fa-envelope icon icon-lg"></i>
-                            </span>
-                            <div class="badge warning badge-sm badge-top-right">
+                        <div class="relative margin-1">
+                            <i class="fas fa-envelope fa-3x"></i>
+                            <div
+                                class="badge secondary badge-md badge-outside-top-right"
+                            >
+                                10
+                            </div>
+                        </div>
+
+                        <div class="relative margin-1">
+                            <i class="fas fa-envelope fa-4x"></i>
+                            <div
+                                class="badge warning badge-lg badge-outside-top-right"
+                            >
                                 10
                             </div>
                         </div>
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-envelope%2520icon%2520icon-sm%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520primary%2520badge-sm%2520badge-top-right%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-envelope%2520icon%2520icon-md%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520secondary%2520badge-sm%2520badge-top-right%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-envelope%2520icon%2520icon-lg%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520warning%2520badge-sm%2520badge-top-right%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522relative%2520margin-1%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-envelope%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520primary%2520badge-sm%2520badge-outside-top-right%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522relative%2520margin-1%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-envelope%2520fa-3x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520secondary%2520badge-md%2520badge-outside-top-right%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522relative%2520margin-1%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-envelope%2520fa-4x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520warning%2520badge-lg%2520badge-outside-top-right%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
                         style="
-                            width: 706px;
-                            height: 596px;
+                            width: 774px;
+                            height: 503px;
                             border: 0;
                             transform: scale(1);
                             overflow: hidden;
@@ -544,34 +572,28 @@
                     </h3>
 
                     <div class="container">
-                        <div class="badge-parent margin-1">
-                            <span>
-                                <i class="fas fa-envelope icon icon-sm"></i>
-                            </span>
+                        <div class="relative margin-1">
+                            <i class="fas fa-shopping-cart fa-2x"></i>
                             <div
-                                class="badge round primary badge-sm badge-top-right"
+                                class="badge round primary badge-sm badge-outside-top-right"
                             >
                                 10
                             </div>
                         </div>
 
-                        <div class="badge-parent margin-1">
-                            <span>
-                                <i class="fas fa-envelope icon icon-md"></i>
-                            </span>
+                        <div class="relative margin-1">
+                            <i class="fas fa-shopping-cart fa-3x"></i>
                             <div
-                                class="badge round secondary badge-sm badge-top-right"
+                                class="badge round secondary badge-md badge-outside-top-right"
                             >
                                 10
                             </div>
                         </div>
 
-                        <div class="badge-parent margin-1">
-                            <span>
-                                <i class="fas fa-envelope icon icon-lg"></i>
-                            </span>
+                        <div class="relative margin-1">
+                            <i class="fas fa-shopping-cart fa-4x"></i>
                             <div
-                                class="badge round warning badge-sm badge-top-right"
+                                class="badge round warning badge-lg badge-outside-top-right"
                             >
                                 10
                             </div>
@@ -579,10 +601,10 @@
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-envelope%2520icon%2520icon-sm%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520round%2520primary%2520badge-sm%2520badge-top-right%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-envelope%2520icon%2520icon-md%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520round%2520secondary%2520badge-sm%2520badge-top-right%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%2520%253Cspan%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-envelope%2520icon%2520icon-lg%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520round%2520warning%2520badge-sm%2520badge-top-right%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522relative%2520margin-1%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520round%2520primary%2520badge-sm%2520badge-outside-top-right%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522relative%2520margin-1%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520fa-3x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520round%2520secondary%2520badge-md%2520badge-outside-top-right%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522relative%2520margin-1%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520fa-4x%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520round%2520warning%2520badge-lg%2520badge-outside-top-right%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
                         style="
-                            width: 757px;
-                            height: 596px;
+                            width: 824px;
+                            height: 503px;
                             border: 0;
                             transform: scale(1);
                             overflow: hidden;
@@ -597,47 +619,51 @@
                     </h3>
 
                     <div class="container">
-                        <div class="badge-parent margin-1">
+                        <div class="relative margin-1">
                             <img
                                 class="avatar sm"
                                 src="https://unsplash.com/photos/nKZuhvCGGQU/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg&force=true&w=640"
-                                alt="avatar-1"
-                            />
-                            <div class="badge primary badge-sm badge-top-right">
-                                10
-                            </div>
-                        </div>
-
-                        <div class="badge-parent margin-1">
-                            <img
-                                class="avatar md"
-                                src="https://unsplash.com/photos/nKZuhvCGGQU/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg&force=true&w=640"
-                                alt="avatar-2"
+                                alt="An avatar of a woman"
                             />
                             <div
-                                class="badge secondary badge-md badge-top-right"
+                                class="badge primary badge badge-outside-top-right"
                             >
                                 10
                             </div>
                         </div>
 
-                        <div class="badge-parent margin-1">
+                        <div class="relative margin-1">
+                            <img
+                                class="avatar md"
+                                src="https://unsplash.com/photos/nKZuhvCGGQU/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg&force=true&w=640"
+                                alt="An avatar of a woman"
+                            />
+                            <div
+                                class="badge secondary badge badge-md badge-outside-top-right"
+                            >
+                                10
+                            </div>
+                        </div>
+
+                        <div class="relative margin-1">
                             <img
                                 class="avatar lg"
                                 src="https://unsplash.com/photos/nKZuhvCGGQU/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg&force=true&w=640"
-                                alt="avatar-3"
+                                alt="An avatar of a woman"
                             />
-                            <div class="badge warning badge-lg badge-top-right">
+                            <div
+                                class="badge warning badge badge-lg badge-outside-top-right"
+                            >
                                 10
                             </div>
                         </div>
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522avatar%2520sm%2522%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-1%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520primary%2520badge-sm%2520badge-top-right%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522avatar%2520md%2522%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-2%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520secondary%2520badge-md%2520badge-top-right%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522avatar%2520lg%2522%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-3%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520warning%2520badge-lg%2520badge-top-right%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522relative%2520margin-1%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522avatar%2520sm%2522%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522An%2520avatar%2520of%2520a%2520woman%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520primary%2520badge%2520badge-outside-top-right%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522relative%2520margin-1%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522avatar%2520md%2522%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522An%2520avatar%2520of%2520a%2520woman%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520secondary%2520badge%2520badge-md%2520badge-outside-top-right%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522relative%2520margin-1%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522avatar%2520lg%2522%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522An%2520avatar%2520of%2520a%2520woman%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520warning%2520badge%2520badge-lg%2520badge-outside-top-right%2522%253E10%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
                         style="
                             width: 1024px;
-                            height: 763px;
+                            height: 782px;
                             border: 0;
                             transform: scale(1);
                             overflow: hidden;
@@ -651,45 +677,43 @@
                     </h3>
 
                     <div class="container">
-                        <div class="badge-parent margin-1">
+                        <div class="relative margin-1">
                             <img
                                 class="avatar round sm"
                                 src="https://unsplash.com/photos/nKZuhvCGGQU/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg&force=true&w=640"
-                                alt="avatar-1"
+                                alt="An avatar of a woman"
                             />
                             <div
-                                class="badge round badge-offline badge-sm badge-bottom-right"
+                                class="badge round badge-offline badge-sm"
                             ></div>
                         </div>
 
-                        <div class="badge-parent margin-1">
+                        <div class="relative margin-1">
                             <img
                                 class="avatar round md"
                                 src="https://unsplash.com/photos/nKZuhvCGGQU/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg&force=true&w=640"
-                                alt="avatar-2"
+                                alt="An avatar of a woman"
                             />
-                            <div
-                                class="badge round badge-busy badge-md badge-bottom-right"
-                            ></div>
+                            <div class="badge round badge-busy badge-md"></div>
                         </div>
 
-                        <div class="badge-parent margin-1">
+                        <div class="relative margin-1">
                             <img
                                 class="avatar round lg"
                                 src="https://unsplash.com/photos/nKZuhvCGGQU/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg&force=true&w=640"
-                                alt="avatar-3"
+                                alt="An avatar of a woman"
                             />
                             <div
-                                class="badge round badge-online badge-lg badge-bottom-right"
+                                class="badge round badge-online badge-lg"
                             ></div>
                         </div>
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522avatar%2520round%2520sm%2522%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-1%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520round%2520badge-offline%2520badge-sm%2520badge-bottom-right%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522avatar%2520round%2520md%2522%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-2%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520round%2520badge-busy%2520badge-md%2520badge-bottom-right%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522badge-parent%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522avatar%2520round%2520lg%2522%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522avatar-3%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520round%2520badge-online%2520badge-lg%2520badge-bottom-right%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522relative%2520margin-1%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522avatar%2520round%2520sm%2522%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522An%2520avatar%2520of%2520a%2520woman%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520round%2520badge-offline%2520badge-sm%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522relative%2520margin-1%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522avatar%2520round%2520md%2522%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522An%2520avatar%2520of%2520a%2520woman%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520round%2520badge-busy%2520badge-md%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522relative%2520margin-1%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522avatar%2520round%2520lg%2522%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8NXx8ZmFjZXx8MHwyfHx8MTY0MzI3Njg2Mg%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522An%2520avatar%2520of%2520a%2520woman%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520round%2520badge-online%2520badge-lg%2522%253E%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
                         style="
                             width: 1024px;
-                            height: 763px;
+                            height: 782px;
                             border: 0;
                             transform: scale(1);
                             overflow: hidden;
@@ -705,6 +729,7 @@
 
                 <section id="button">
                     <h1 class="component-title">Button</h1>
+
                     <p class="component-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quisquam quaerat, et quae quo optio minus. Placeat eaque
@@ -728,10 +753,10 @@
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2522%253EDefault%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-success%2522%253ESuccess%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-danger%2522%253EDanger%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-warning%2522%253EWarning%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-info%2522%253EInfo%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-light%2522%253ELight%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-dark%2522%253EDark%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2522%253EDefault%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-success%2522%253ESuccess%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-danger%2522%253EDanger%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-warning%2522%253EWarning%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-info%2522%253EInfo%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-light%2522%253ELight%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-dark%2522%253EDark%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A"
                         style="
                             width: 605px;
-                            height: 391px;
+                            height: 409px;
                             border: 0;
                             transform: scale(1);
                             overflow: hidden;
@@ -759,10 +784,10 @@
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary-outline%2522%253EPrimary%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary-outline%2522%253ESecondary%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-success-outline%2522%253ESuccess%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-danger-outline%2522%253EDanger%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-warning-outline%2522%253EWarning%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-info-outline%2522%253EInfo%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-light-outline%2522%253ELight%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-dark-outline%2522%253EDark%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary-outline%2522%253EPrimary%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary-outline%2522%253ESecondary%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-success-outline%2522%253ESuccess%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-danger-outline%2522%253EDanger%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-warning-outline%2522%253EWarning%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-info-outline%2522%253EInfo%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-light-outline%2522%253ELight%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-dark-outline%2522%253EDark%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A"
                         style="
                             width: 672px;
-                            height: 372px;
+                            height: 391px;
                             border: 0;
                             transform: scale(1);
                             overflow: hidden;
@@ -774,7 +799,7 @@
                     <!-- LINK BUTTON -->
                     <h3 class="component-subtitle">Examples of Link Button</h3>
 
-                    <div class="container padding-2">
+                    <div class="container">
                         <a class="btn btn-primary btn-link" href="">Link 1</a>
                         <a class="btn btn-secondary btn-link" href="">Link 2</a>
                     </div>
@@ -805,10 +830,10 @@
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-search%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-search%2522%253E%253C%252Fi%253E%2520Search%250A%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-search%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-search%2522%253E%253C%252Fi%253E%2520Search%250A%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A"
                         style="
                             width: 487px;
-                            height: 335px;
+                            height: 354px;
                             border: 0;
                             transform: scale(1);
                             overflow: hidden;
@@ -852,6 +877,7 @@
 
                 <section id="card">
                     <h1 class="component-title">Card</h1>
+
                     <p class="component-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quisquam quaerat, et quae quo optio minus. Placeat eaque
@@ -859,45 +885,32 @@
                         dolore itaque, provident dignissimos maxime quo.
                     </p>
 
+                    <!-- CARD WITH HEADER AND BODY -->
                     <h3 class="component-subtitle">
                         Examples of Text-only Card
                     </h3>
 
                     <div class="container">
-                        <div class="cards-combined">
-                            <!-- CARD WITH HEADER ONLY -->
-
-                            <div class="card">
-                                <div class="card-header">
-                                    <h2 class="text-bold">Tony</h2>
-                                    <small class="text-muted">Author</small>
-                                </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h2 class="text-bold">Tony</h2>
+                                <small class="text-muted">Author</small>
                             </div>
 
-                            <!-- CARD WITH HEADER AND BODY -->
-
-                            <div class="card">
-                                <div class="card-header">
-                                    <h2 class="text-bold">Tony</h2>
-                                    <small class="text-muted">Author</small>
-                                </div>
-
-                                <div class="card-body">
-                                    <small class="text-muted"
-                                        >Lorem ipsum, dolor sit amet consectetur
-                                        adipisicing elit. Alias,
-                                        corrupti!</small
-                                    >
-                                </div>
+                            <div class="card-body">
+                                <small class="text-muted"
+                                    >Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Alias, corrupti!</small
+                                >
                             </div>
                         </div>
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522text-bold%2522%253ETony%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EAuthor%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522text-bold%2522%253ETony%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EAuthor%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%252C%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Alias%252C%250A%2520%2520%2520%2520%2520%2520corrupti%21%250A%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522text-bold%2522%253ETony%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EAuthor%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%252C%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Alias%252C%2520corrupti%21%250A%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
                         style="
-                            width: 740px;
-                            height: 577px;
+                            width: 824px;
+                            height: 428px;
                             border: 0;
                             transform: scale(1);
                             overflow: hidden;
@@ -916,13 +929,13 @@
                             <img
                                 class="image-responsive"
                                 src="https://unsplash.com/photos/kcA-c3f_3FE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA&force=true&w=640"
-                                alt="Image of a food bowl"
+                                alt="An image of a food bowl"
                             />
                         </div>
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522image-responsive%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FkcA-c3f_3FE%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522Image%2520of%2520a%2520food%2520bowl%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522image-responsive%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FkcA-c3f_3FE%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522An%2520image%2520of%2520a%2520food%2520bowl%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A"
                         style="
                             width: 1024px;
                             height: 354px;
@@ -934,38 +947,7 @@
                     >
                     </iframe>
 
-                    <!-- CARD WITH IMAGE AND HEADER  -->
-                    <h3 class="component-subtitle">Example of a Simple Card</h3>
-
-                    <div class="container">
-                        <div class="card">
-                            <img
-                                class="image-responsive"
-                                src="https://unsplash.com/photos/kcA-c3f_3FE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA&force=true&w=640"
-                                alt="Image of a food bowl"
-                            />
-
-                            <div class="card-header">
-                                <h2 class="text-bold">Tony</h2>
-                                <small class="text-muted">Author</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522image-responsive%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FkcA-c3f_3FE%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522Image%2520of%2520a%2520food%2520bowl%2522%250A%2520%2520%252F%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522text-bold%2522%253ETony%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EAuthor%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
-                        style="
-                            width: 1024px;
-                            height: 447px;
-                            border: 0;
-                            transform: scale(1);
-                            overflow: hidden;
-                        "
-                        sandbox="allow-scripts allow-same-origin"
-                    >
-                    </iframe>
-
-                    <!-- CARD WITH IMAGE, HEADER, BODY AND FOOTER   -->
+                    <!-- CARD WITH IMAGE, HEADER, BODY AND FOOTER -->
                     <h3 class="component-subtitle">Example of a Full Card</h3>
 
                     <div class="container">
@@ -973,7 +955,7 @@
                             <img
                                 class="image-responsive"
                                 src="https://unsplash.com/photos/kcA-c3f_3FE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA&force=true&w=640"
-                                alt="Image of a food bowl"
+                                alt="An image of a food bowl"
                             />
 
                             <div class="card-header">
@@ -997,7 +979,7 @@
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522image-responsive%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FkcA-c3f_3FE%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522Image%2520of%2520a%2520food%2520bowl%2522%250A%2520%2520%252F%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522text-bold%2522%253ETony%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EAuthor%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%252C%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Alias%252C%2520corrupti%21%250A%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253ERead%2520More%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522image-responsive%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FkcA-c3f_3FE%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522An%2520image%2520of%2520a%2520food%2520bowl%2522%250A%2520%2520%252F%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522text-bold%2522%253ETony%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EAuthor%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%252C%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Alias%252C%2520corrupti%21%250A%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253ERead%2520More%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
                         style="
                             width: 1024px;
                             height: 633px;
@@ -1009,96 +991,137 @@
                     >
                     </iframe>
 
-                    <h3 class="component-subtitle">Examples of a Badge Card</h3>
+                    <!-- CARD WITH IMAGE, HEADER, BODY AND FOOTER -->
+                    <h3 class="component-subtitle">
+                        Example of a Product Card
+                    </h3>
 
                     <div class="container">
-                        <div class="cards-combined">
-                            <!-- CARD WITH IMAGE AND BADGE   -->
+                        <div class="card relative text-center">
+                            <button
+                                class="btn round btn-light btn-floating badge badge-lg badge-inside-top-right"
+                            >
+                                <i class="far fa-heart fa-lg"></i>
+                            </button>
 
-                            <div class="card">
-                                <div class="badge-parent">
-                                    <img
-                                        class="image-responsive"
-                                        src="https://unsplash.com/photos/kcA-c3f_3FE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA&force=true&w=640"
-                                        alt="Image of a food bowl"
-                                    />
-                                    <div
-                                        class="badge primary badge-lg badge-top-right"
-                                    >
-                                        NEW
-                                    </div>
-                                </div>
+                            <img
+                                class="image-responsive"
+                                src="https://unsplash.com/photos/GREEBEtyR9Y/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQ0NjQyMTAw&force=true&w=640"
+                                alt="An image of a man in a white t-shirt"
+                            />
+
+                            <div class="card-header">
+                                <small class="text-muted"
+                                    >Men's Premium Shirt</small
+                                >
                             </div>
 
-                            <!-- CARD WITH IMAGE AND BADGE PICTURE  -->
+                            <div class="card-body">
+                                <h3 class="text-bold">Rs 500</h3>
+                            </div>
 
-                            <div class="card">
-                                <div class="badge-parent">
-                                    <img
-                                        class="image-responsive"
-                                        src="https://unsplash.com/photos/kcA-c3f_3FE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA&force=true&w=640"
-                                        alt="Image of a food bowl"
-                                    />
-                                    <div class="badge round badge-top-right">
-                                        <img
-                                            src="/assets/img/new-badge.png"
-                                            alt="Image of a NEW badge"
-                                            width="75rem"
-                                        />
-                                    </div>
-                                </div>
+                            <div class="card-footer">
+                                <button class="btn btn-secondary btn-width-100">
+                                    Add to cart
+                                </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="badge-parent">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520relative%2520text-center%2522%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520round%2520btn-light%2520btn-floating%2520badge%2520badge-lg%2520badge-inside-top-right%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-heart%2520fa-lg%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522image-responsive%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FGREEBEtyR9Y%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQ0NjQyMTAw%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522An%2520image%2520of%2520a%2520man%2520in%2520a%2520white%2520t-shirt%2522%250A%2520%2520%252F%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EMen%27s%2520Premium%2520Shirt%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522text-bold%2522%253ERs%2520500%253C%252Fh3%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520btn-width-100%2522%253EAdd%2520to%2520cart%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                        style="
+                            width: 1024px;
+                            height: 651px;
+                            border: 0;
+                            transform: scale(1);
+                            overflow: hidden;
+                        "
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+
+                    <!-- CARD WITH IMAGE AND BADGE   -->
+                    <h3 class="component-subtitle">Example of a Badge Card</h3>
+
+                    <div class="container">
+                        <div class="card relative">
                             <img
                                 class="image-responsive"
                                 src="https://unsplash.com/photos/kcA-c3f_3FE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA&force=true&w=640"
-                                alt="Image of a food bowl"
+                                alt="An image of a food bowl"
                             />
-                            <div class="badge primary badge-lg badge-top-right">
+                            <div
+                                class="badge primary badge-lg badge-inside-top-right"
+                            >
                                 NEW
                             </div>
                         </div>
                     </div>
 
-                    <div class="card">
-                        <div class="badge-parent">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520relative%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522image-responsive%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FkcA-c3f_3FE%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522An%2520image%2520of%2520a%2520food%2520bowl%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge%2520primary%2520badge-lg%2520badge-inside-top-right%2522%253ENEW%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                        style="
+                            width: 1024px;
+                            height: 372px;
+                            border: 0;
+                            transform: scale(1);
+                            overflow: hidden;
+                        "
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+
+                    <!-- CARD WITH IMAGE AND BADGE PICTURE  -->
+                    <h3 class="component-subtitle">Example of a Badge Card</h3>
+
+                    <div class="container">
+                        <div class="card relative">
                             <img
                                 class="image-responsive"
                                 src="https://unsplash.com/photos/kcA-c3f_3FE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA&force=true&w=640"
-                                alt="Image of a food bowl"
+                                alt="An image of a food bowl"
                             />
-                            <div class="badge round badge-top-right">
+                            <div class="badge round badge-outside-top-right">
                                 <img
                                     src="/assets/img/new-badge.png"
-                                    alt="Image of a NEW badge"
+                                    alt="Image of a badge"
                                     width="75rem"
                                 />
                             </div>
                         </div>
                     </div>
 
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520relative%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522image-responsive%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FkcA-c3f_3FE%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522An%2520image%2520of%2520a%2520food%2520bowl%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge%2520round%2520badge-outside-top-right%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fassets%252Fimg%252Fnew-badge.png%2522%2520alt%253D%2522Image%2520of%2520a%2520badge%2522%2520width%253D%252275rem%2522%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                        style="
+                            width: 1024px;
+                            height: 409px;
+                            border: 0;
+                            transform: scale(1);
+                            overflow: hidden;
+                        "
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+
+                    <!-- CARD WITH IMAGE, HEADER, BODY. FOOTER AND DISMISS -->
                     <h3 class="component-subtitle">
                         Example of a Dismiss Card
                     </h3>
 
-                    <!-- CARD WITH IMAGE, HEADER, BODY. FOOTER AND DISMISS   -->
-
                     <div class="container">
-                        <div class="card">
-                            <div class="card-menubar">
-                                <button class="btn btn-danger">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
+                        <div class="card relative">
+                            <button
+                                class="btn round btn-primary btn-floating badge badge-lg badge-inside-top-right"
+                            >
+                                <i class="fas fa-times"></i>
+                            </button>
 
                             <img
                                 class="image-responsive"
                                 src="https://unsplash.com/photos/kcA-c3f_3FE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA&force=true&w=640"
-                                alt="Image of a food bowl"
+                                alt="An image of a food bowl"
                             />
 
                             <div class="card-header">
@@ -1122,10 +1145,10 @@
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-menubar%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522image-responsive%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FkcA-c3f_3FE%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522Image%2520of%2520a%2520food%2520bowl%2522%250A%2520%2520%252F%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522text-bold%2522%253ETony%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EAuthor%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%252C%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Alias%252C%2520corrupti%21%250A%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253ERead%2520More%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520relative%2522%253E%250A%2520%2520%253Cbutton%2520class%253D%2522btn%2520round%2520btn-primary%2520btn-floating%2520badge%2520badge-lg%2520badge-inside-top-right%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522image-responsive%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FkcA-c3f_3FE%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522An%2520image%2520of%2520a%2520food%2520bowl%2522%250A%2520%2520%252F%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522text-bold%2522%253ETony%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EAuthor%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%252C%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Alias%252C%2520corrupti%21%250A%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253ERead%2520More%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
                         style="
                             width: 1024px;
-                            height: 745px;
+                            height: 707px;
                             border: 0;
                             transform: scale(1);
                             overflow: hidden;
@@ -1134,25 +1157,22 @@
                     >
                     </iframe>
 
+                    <!-- CARD WITH TEXT OVERLAY  -->
                     <h3 class="component-subtitle">
                         Example of a Text Overlay Card
                     </h3>
 
-                    <!-- CARD WITH TEXT OVERLAY  -->
-
                     <div class="container">
-                        <div class="card">
-                            <div class="card-relative">
-                                <img
-                                    class="image-responsive"
-                                    src="https://unsplash.com/photos/kcA-c3f_3FE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA&force=true&w=640"
-                                    alt="Image of a food bowl"
-                                />
+                        <div class="card relative">
+                            <img
+                                class="image-responsive"
+                                src="https://unsplash.com/photos/kcA-c3f_3FE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA&force=true&w=640"
+                                alt="An image of a food bowl"
+                            />
 
-                                <div class="card-header card-text-overlay">
-                                    <h2 class="text-bold">Tony</h2>
-                                    <small class="text-muted">Author</small>
-                                </div>
+                            <div class="card-header card-text-overlay">
+                                <h2 class="text-bold">Tony</h2>
+                                <small class="text-muted">Author</small>
                             </div>
 
                             <div class="card-body">
@@ -1171,10 +1191,44 @@
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-relative%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522image-responsive%2522%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FkcA-c3f_3FE%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522Image%2520of%2520a%2520food%2520bowl%2522%250A%2520%2520%2520%2520%252F%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header%2520card-text-overlay%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522text-bold%2522%253ETony%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EAuthor%253C%252Fsmall%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%252C%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Alias%252C%2520corrupti%21%250A%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253ERead%2520More%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520relative%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522image-responsive%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FkcA-c3f_3FE%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522An%2520image%2520of%2520a%2520food%2520bowl%2522%250A%2520%2520%252F%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2520card-text-overlay%2522%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522text-bold%2522%253ETony%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EAuthor%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%252C%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Alias%252C%2520corrupti%21%250A%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253ERead%2520More%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
                         style="
                             width: 1024px;
-                            height: 670px;
+                            height: 633px;
+                            border: 0;
+                            transform: scale(1);
+                            overflow: hidden;
+                        "
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+
+                    <!-- CARD WITH TEXT OVERLAY  -->
+                    <h3 class="component-subtitle">
+                        Example of a Text Overlay Card
+                    </h3>
+
+                    <div class="container">
+                        <div class="card relative">
+                            <img
+                                class="image-responsive image-translucent"
+                                src="https://unsplash.com/photos/kcA-c3f_3FE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA&force=true&w=640"
+                                alt="An image of a food bowl"
+                            />
+
+                            <div
+                                class="card-header absolute badge-inside-center-stretch light"
+                            >
+                                <h2 class="text-bold">Tony</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520relative%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522image-responsive%2520image-translucent%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FkcA-c3f_3FE%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522An%2520image%2520of%2520a%2520food%2520bowl%2522%250A%2520%2520%252F%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2520absolute%2520badge-inside-center-stretch%2520light%2522%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522text-bold%2522%253ETony%253C%252Fh2%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                        style="
+                            width: 1024px;
+                            height: 428px;
                             border: 0;
                             transform: scale(1);
                             overflow: hidden;
@@ -1193,8 +1247,8 @@
                             <div class="card-left-content">
                                 <img
                                     class="image-responsive"
-                                    src="https://unsplash.com/photos/kcA-c3f_3FE/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA&force=true&w=640"
-                                    alt="Image of a food bowl"
+                                    src="https://unsplash.com/photos/GREEBEtyR9Y/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MjJ8fHQlMjBzaGlydHxlbnwwfDF8fHwxNjQ0NjQyMDI1&force=true&w=640"
+                                    alt="An image of a man in a white t-shirt"
                                 />
                             </div>
 
@@ -1207,11 +1261,8 @@
                                 <div class="card-body">
                                     <small class="text-muted"
                                         >Lorem ipsum, dolor sit amet consectetur
-                                        adipisicing elit. Alias, corrupti! Lorem
-                                        ipsum, dolor sit amet consectetur
-                                        adipisicing elit. Alias,
-                                        corrupti!</small
-                                    >
+                                        adipisicing elit. Alias, corrupti!
+                                    </small>
                                 </div>
                                 <div class="card-footer">
                                     <button class="btn btn-primary">
@@ -1223,10 +1274,150 @@
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-left-content%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522image-responsive%2522%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FkcA-c3f_3FE%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8MXx8Zm9vZHx8MHwyfHx8MTY0MzEzMDk5OA%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522Image%2520of%2520a%2520food%2520bowl%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-right-content%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522text-bold%2522%253ETony%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EAuthor%253C%252Fsmall%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%252C%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Alias%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520corrupti%21%2520Lorem%2520ipsum%252C%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520Alias%252C%2520corrupti%21%250A%2520%2520%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253ERead%2520More%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-left-content%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522image-responsive%2522%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FGREEBEtyR9Y%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8MjJ8fHQlMjBzaGlydHxlbnwwfDF8fHwxNjQ0NjQyMDI1%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522An%2520image%2520of%2520a%2520man%2520in%2520a%2520white%2520t-shirt%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-right-content%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522text-bold%2522%253ETony%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EAuthor%253C%252Fsmall%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%252C%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Alias%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520corrupti%21%250A%2520%2520%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253ERead%2520More%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
                         style="
                             width: 1024px;
-                            height: 726px;
+                            height: 707px;
+                            border: 0;
+                            transform: scale(1);
+                            overflow: hidden;
+                        "
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+
+                    <!-- HORIZONTAL CARD WITH IMAGE AND BODY -->
+                    <h3 class="component-subtitle">
+                        Example of a Horizontal Product Card
+                    </h3>
+
+                    <div class="container">
+                        <div class="card card-horizontal">
+                            <div class="card-left-content">
+                                <img
+                                    class="image-responsive"
+                                    src="https://unsplash.com/photos/GREEBEtyR9Y/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MjJ8fHQlMjBzaGlydHxlbnwwfDF8fHwxNjQ0NjQyMDI1&force=true&w=640"
+                                    alt="An image of a man in a white t-shirt"
+                                />
+                            </div>
+
+                            <div class="card-right-content">
+                                <div class="card-body">
+                                    <h4 class="text-bold text-muted">
+                                        Men's Premium Shirt
+                                    </h4>
+                                    <h3 class="text-bold">Rs 500</h3>
+                                    <small class="text-bold text-muted"
+                                        >50% off</small
+                                    >
+                                    <p>
+                                        Quantity:
+                                        <button
+                                            class="btn round btn-secondary btn-floating"
+                                        >
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        1
+                                        <button
+                                            class="btn round btn-primary btn-floating"
+                                        >
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </p>
+                                </div>
+
+                                <div class="card-footer">
+                                    <button
+                                        class="btn btn-secondary btn-width-100"
+                                    >
+                                        Add to cart
+                                    </button>
+
+                                    <button
+                                        class="btn btn-secondary-outline btn-width-100"
+                                    >
+                                        Save to wishlist
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-left-content%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522image-responsive%2522%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FGREEBEtyR9Y%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8MjJ8fHQlMjBzaGlydHxlbnwwfDF8fHwxNjQ0NjQyMDI1%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522An%2520image%2520of%2520a%2520man%2520in%2520a%2520white%2520t-shirt%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-right-content%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522text-bold%2520text-muted%2522%253EMen%27s%2520Premium%2520Shirt%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522text-bold%2522%253ERs%2520500%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-bold%2520text-muted%2522%253E50%2525%2520off%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Quantity%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520round%2520btn-secondary%2520btn-floating%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-minus%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%25201%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520round%2520btn-primary%2520btn-floating%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520btn-width-100%2522%253EAdd%2520to%2520cart%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary-outline%2520btn-width-100%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Save%2520to%2520wishlist%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                        style="
+                            width: 1024px;
+                            height: 875px;
+                            border: 0;
+                            transform: scale(1);
+                            overflow: hidden;
+                        "
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
+
+                    <!-- HORIZONTAL CARD WITH IMAGE AND BODY -->
+                    <h3 class="component-subtitle">
+                        Example of a Stretched Horizontal Product Card
+                    </h3>
+
+                    <div class="container">
+                        <div class="card card-horizontal card-stretched">
+                            <div class="card-left-content">
+                                <img
+                                    class="image-responsive"
+                                    src="https://unsplash.com/photos/GREEBEtyR9Y/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MjJ8fHQlMjBzaGlydHxlbnwwfDF8fHwxNjQ0NjQyMDI1&force=true&w=640"
+                                    alt="An image of a man in a white t-shirt"
+                                />
+                            </div>
+
+                            <div class="card-right-content">
+                                <div class="card-body">
+                                    <h4 class="text-bold text-muted">
+                                        Men's Premium Shirt
+                                    </h4>
+                                    <h3 class="text-bold">Rs 500</h3>
+                                    <small class="text-bold text-muted"
+                                        >50% off</small
+                                    >
+                                    <p>
+                                        Quantity:
+                                        <button
+                                            class="btn round btn-secondary btn-floating"
+                                        >
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        1
+                                        <button
+                                            class="btn round btn-primary btn-floating"
+                                        >
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </p>
+                                </div>
+
+                                <div class="card-footer">
+                                    <button
+                                        class="btn btn-secondary btn-width-100"
+                                    >
+                                        Add to cart
+                                    </button>
+
+                                    <button
+                                        class="btn btn-secondary-outline btn-width-100"
+                                    >
+                                        Save to wishlist
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-horizontal%2520card-stretched%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-left-content%2522%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522image-responsive%2522%250A%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FGREEBEtyR9Y%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxzZWFyY2h8MjJ8fHQlMjBzaGlydHxlbnwwfDF8fHwxNjQ0NjQyMDI1%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520%2520%2520alt%253D%2522An%2520image%2520of%2520a%2520man%2520in%2520a%2520white%2520t-shirt%2522%250A%2520%2520%2520%2520%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-right-content%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522text-bold%2520text-muted%2522%253EMen%27s%2520Premium%2520Shirt%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522text-bold%2522%253ERs%2520500%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-bold%2520text-muted%2522%253E50%2525%2520off%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Quantity%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520round%2520btn-secondary%2520btn-floating%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-minus%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%25201%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520round%2520btn-primary%2520btn-floating%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520btn-width-100%2522%253EAdd%2520to%2520cart%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary-outline%2520btn-width-100%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Save%2520to%2520wishlist%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                        style="
+                            width: 1024px;
+                            height: 875px;
                             border: 0;
                             transform: scale(1);
                             overflow: hidden;
@@ -1258,12 +1449,12 @@
                         <img
                             class="image-responsive"
                             src="https://unsplash.com/photos/IUGQc0ak7c0/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQzMjI1NjEy&force=true&w=640"
-                            alt="image-1"
+                            alt="An image of a table"
                         />
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522image-responsive%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FIUGQc0ak7c0%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQzMjI1NjEy%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522image-1%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522image-responsive%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FIUGQc0ak7c0%252Fdownload%253Fixid%253DMnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQzMjI1NjEy%2526force%253Dtrue%2526w%253D640%2522%250A%2520%2520%2520%2520alt%253D%2522An%2520image%2520of%2520a%2520table%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A"
                         style="
                             width: 1024px;
                             height: 354px;
@@ -1285,18 +1476,18 @@
                         <img
                             class="round image-responsive image-size-50"
                             src="https://unsplash.com/photos/nKZuhvCGGQU/download?force=true"
-                            alt="image-3"
+                            alt="An avatar of a girl"
                         />
 
                         <img
                             class="round image-responsive image-size-25"
                             src="https://unsplash.com/photos/nKZuhvCGGQU/download?force=true"
-                            alt="image-4"
+                            alt="An avatar of a girl"
                         />
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522round%2520image-responsive%2520image-size-50%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fforce%253Dtrue%2522%250A%2520%2520%2520%2520alt%253D%2522image-3%2522%250A%2520%2520%252F%253E%250A%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522round%2520image-responsive%2520image-size-25%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fforce%253Dtrue%2522%250A%2520%2520%2520%2520alt%253D%2522image-4%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522round%2520image-responsive%2520image-size-50%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fforce%253Dtrue%2522%250A%2520%2520%2520%2520alt%253D%2522An%2520avatar%2520of%2520a%2520girl%2522%250A%2520%2520%252F%253E%250A%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522round%2520image-responsive%2520image-size-25%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Funsplash.com%252Fphotos%252FnKZuhvCGGQU%252Fdownload%253Fforce%253Dtrue%2522%250A%2520%2520%2520%2520alt%253D%2522An%2520avatar%2520of%2520a%2520girl%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A"
                         style="
                             width: 732px;
                             height: 447px;
@@ -1328,20 +1519,20 @@
                     <div class="container">
                         <form action="">
                             <div class="form-element">
-                                <label for="emailInput"
+                                <label for="emailInput1"
                                     ><small class="text-muted">
                                         Email Address</small
                                     >
                                 </label>
-                                <input type="email" id="emailInput" />
+                                <input type="email" id="emailInput1" />
                             </div>
                             <div class="form-element">
-                                <label for="passwordInput"
+                                <label for="passwordInput1"
                                     ><small class="text-muted">
                                         Password</small
                                     ></label
                                 >
-                                <input type="password" id="passwordInput" />
+                                <input type="password" id="passwordInput1" />
                             </div>
                             <div class="form-element">
                                 <button class="btn btn-primary" type="submit">
@@ -1352,22 +1543,22 @@
 
                         <form action="">
                             <div class="form-element">
-                                <label class="floating-label" for="emailInput"
+                                <label class="floating-label" for="emailInput2"
                                     ><small class="text-muted">
                                         Email Address</small
                                     >
                                 </label>
-                                <input type="email" id="emailInput" />
+                                <input type="email" id="emailInput2" />
                             </div>
                             <div class="form-element">
                                 <label
                                     class="floating-label"
-                                    for="passwordInput"
+                                    for="passwordInput2"
                                     ><small class="text-muted">
                                         Password</small
                                     ></label
                                 >
-                                <input type="password" id="passwordInput" />
+                                <input type="password" id="passwordInput2" />
                             </div>
                             <div class="form-element">
                                 <button class="btn btn-primary" type="submit">
@@ -1378,9 +1569,9 @@
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cform%2520action%253D%2522%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522emailInput%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EEmail%2520Address%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520id%253D%2522emailInput%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522passwordInput%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EPassword%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520id%253D%2522passwordInput%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%2520type%253D%2522submit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Submit%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fform%253E%250A%250A%2520%2520%253Cform%2520action%253D%2522%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522floating-label%2522%2520for%253D%2522emailInput%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EEmail%2520Address%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520id%253D%2522emailInput%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522floating-label%2522%2520for%253D%2522passwordInput%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EPassword%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520id%253D%2522passwordInput%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%2520type%253D%2522submit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Submit%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fform%253E%250A%253C%252Fdiv%253E%250A"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cform%2520action%253D%2522%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522emailInput1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EEmail%2520Address%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520id%253D%2522emailInput1%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522passwordInput1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EPassword%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520id%253D%2522passwordInput1%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%2520type%253D%2522submit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Submit%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fform%253E%250A%250A%2520%2520%253Cform%2520action%253D%2522%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522floating-label%2522%2520for%253D%2522emailInput2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EEmail%2520Address%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522email%2522%2520id%253D%2522emailInput2%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522floating-label%2522%2520for%253D%2522passwordInput2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EPassword%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522password%2522%2520id%253D%2522passwordInput2%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%2520type%253D%2522submit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Submit%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fform%253E%250A%253C%252Fdiv%253E%250A"
                         style="
-                            width: 622px;
+                            width: 630px;
                             height: 968px;
                             border: 0;
                             transform: scale(1);
@@ -1398,15 +1589,15 @@
                     <div class="container">
                         <form action="">
                             <div class="form-element">
-                                <label for="emailInput"
+                                <label for="emailInput3"
                                     ><small class="text-danger">
                                         Email Address *</small
                                     >
                                 </label>
                                 <input
-                                    class="input-inline-block input-border-danger"
+                                    class="input-inline-block input-border-danger text-danger"
                                     type="email"
-                                    id="emailInput"
+                                    id="emailInput3"
                                     required
                                 />
                                 <i
@@ -1415,15 +1606,15 @@
                                 ></i>
                             </div>
                             <div class="form-element">
-                                <label for="passwordInput"
+                                <label for="passwordInput3"
                                     ><small class="text-danger">
                                         Password *</small
                                     ></label
                                 >
                                 <input
-                                    class="input-inline-block input-border-danger"
+                                    class="input-inline-block input-border-danger text-danger"
                                     type="password"
-                                    id="passwordInput"
+                                    id="passwordInput3"
                                     required
                                 />
                                 <i
@@ -1440,15 +1631,15 @@
 
                         <form action="">
                             <div class="form-element">
-                                <label class="floating-label" for="emailInput"
+                                <label class="floating-label" for="emailInput4"
                                     ><small class="text-danger">
                                         Email Address *</small
                                     >
                                 </label>
                                 <input
-                                    class="input-inline-block input-border-danger"
+                                    class="input-inline-block input-border-danger text-danger"
                                     type="email"
-                                    id="emailInput"
+                                    id="emailInput4"
                                     required
                                 />
                                 <i
@@ -1459,15 +1650,15 @@
                             <div class="form-element">
                                 <label
                                     class="floating-label"
-                                    for="passwordInput"
+                                    for="passwordInput4"
                                     ><small class="text-danger">
                                         Password *</small
                                     ></label
                                 >
                                 <input
-                                    class="input-inline-block input-border-danger"
+                                    class="input-inline-block input-border-danger text-danger"
                                     type="password"
-                                    id="passwordInput"
+                                    id="passwordInput4"
                                     required
                                 />
                                 <i
@@ -1484,7 +1675,7 @@
                     </div>
 
                     <iframe
-                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cform%2520action%253D%2522%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522emailInput%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-danger%2522%253EEmail%2520Address%2520*%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input-inline-block%2520input-border-danger%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522emailInput%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%2520style%253D%2522color%253A%2520red%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522passwordInput%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-danger%2522%253EPassword%2520*%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input-inline-block%2520input-border-danger%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522password%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522passwordInput%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%2520style%253D%2522color%253A%2520red%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%2520type%253D%2522submit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Submit%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fform%253E%250A%250A%2520%2520%253Cform%2520action%253D%2522%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522floating-label%2522%2520for%253D%2522emailInput%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-danger%2522%253EEmail%2520Address%2520*%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input-inline-block%2520input-border-danger%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522emailInput%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%2520style%253D%2522color%253A%2520red%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522floating-label%2522%2520for%253D%2522passwordInput%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-danger%2522%253EPassword%2520*%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input-inline-block%2520input-border-danger%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522password%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522passwordInput%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%2520style%253D%2522color%253A%2520red%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%2520type%253D%2522submit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Submit%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fform%253E%250A%253C%252Fdiv%253E%250A"
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cform%2520action%253D%2522%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522emailInput3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-danger%2522%253EEmail%2520Address%2520*%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input-inline-block%2520input-border-danger%2520text-danger%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522emailInput3%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%2520style%253D%2522color%253A%2520red%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522passwordInput3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-danger%2522%253EPassword%2520*%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input-inline-block%2520input-border-danger%2520text-danger%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522password%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522passwordInput3%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%2520style%253D%2522color%253A%2520red%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%2520type%253D%2522submit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Submit%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fform%253E%250A%250A%2520%2520%253Cform%2520action%253D%2522%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522floating-label%2522%2520for%253D%2522emailInput4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-danger%2522%253EEmail%2520Address%2520*%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input-inline-block%2520input-border-danger%2520text-danger%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522email%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522emailInput4%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%2520style%253D%2522color%253A%2520red%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522floating-label%2522%2520for%253D%2522passwordInput4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-danger%2522%253EPassword%2520*%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522input-inline-block%2520input-border-danger%2520text-danger%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522password%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522passwordInput4%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%2520style%253D%2522color%253A%2520red%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-element%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%2520type%253D%2522submit%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Submit%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fform%253E%250A%253C%252Fdiv%253E%250A"
                         style="
                             width: 723px;
                             height: 1415px;
@@ -1498,6 +1689,7 @@
                 </section>
 
                 <!-- MODAL -->
+
                 <section id="modal">
                     <h1 class="component-title">Modal</h1>
                     <p class="component-description">
@@ -1514,7 +1706,10 @@
 
                         <div class="card modal">
                             <div class="card-menubar">
-                                <button id="modal-close" class="btn btn-danger">
+                                <button
+                                    id="modal-close"
+                                    class="btn btn-primary round btn-floating"
+                                >
                                     <i class="fas fa-times"></i>
                                 </button>
                             </div>
@@ -1530,11 +1725,31 @@
                                     adipisicing elit. Alias, corrupti!</small
                                 >
                             </div>
+
+                            <div class="card-footer">
+                                <button class="btn btn-primary">
+                                    Read More
+                                </button>
+                            </div>
                         </div>
                     </div>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520modal%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card-menubar%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520id%253D%2522modal-close%2522%2520class%253D%2522btn%2520btn-primary%2520round%2520btn-floating%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-header%2522%253E%250A%2520%2520%2520%2520%253Ch2%2520class%253D%2522text-bold%2522%253ETony%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253EAuthor%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-muted%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%252C%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Alias%252C%2520corrupti%21%250A%2520%2520%2520%2520%253C%252Fsmall%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522card-footer%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253ERead%2520More%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                        style="
+                            width: 824px;
+                            height: 614px;
+                            border: 0;
+                            transform: scale(1);
+                            overflow: hidden;
+                        "
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
                 </section>
 
                 <!-- TOAST -->
+
                 <section id="toast">
                     <h1 class="component-title">Toast</h1>
                     <p class="component-description">
@@ -1562,6 +1777,19 @@
                             <i class="fas fa-times"></i>
                         </div>
                     </div>
+
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cbutton%2520id%253D%2522toast-primary%2522%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520%2520%2520Primary%2520toast%250A%2520%2520%253C%252Fbutton%253E%250A%2520%2520%253Cbutton%2520id%253D%2522toast-danger%2522%2520class%253D%2522btn%2520btn-danger%2522%253E%250A%2520%2520%2520%2520Danger%2520toast%250A%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%253Cdiv%2520id%253D%2522toast1%2522%2520class%253D%2522toast%2520primary%2522%253E%250A%2520%2520%2520%2520Primary%2520toast%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520id%253D%2522toast2%2522%2520class%253D%2522toast%2520danger%2522%253E%250A%2520%2520%2520%2520Danger%2520toast%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A"
+                        style="
+                            width: 597px;
+                            height: 540px;
+                            border: 0;
+                            transform: scale(1);
+                            overflow: hidden;
+                        "
+                        sandbox="allow-scripts allow-same-origin"
+                    >
+                    </iframe>
                 </section>
             </main>
 
@@ -1641,8 +1869,6 @@
             </footer>
         </div>
 
-        <script src="/assets/js/dark-mode.js"></script>
-        <script src="/assets/js/modal.js"></script>
-        <script src="/assets/js/toast.js"></script>
+        <script src="/assets/js/script.js"></script>
     </body>
 </html>
