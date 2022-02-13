@@ -5,6 +5,11 @@
     grid-gap: 0.5rem;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     align-items: center;
     display: flex;
@@ -59,6 +64,11 @@ a {
     text-decoration: none;
 }
 
+small,
+p {
+    line-height: 1.5;
+}
+
 .hr-thin {
     border: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -107,12 +117,16 @@ a {
     margin: 1.5rem;
 }
 
-.navbar-horizontal {
-    display: flex;
+.list-navbar {
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 3rem !important;
     justify-content: space-evenly;
-    list-style-type: none;
+}
+
+.list-sidebar {
+    flex-wrap: nowrap;
+    gap: 2.5rem !important;
+    justify-content: space-evenly;
 }
 
 .my-name {
@@ -124,6 +138,27 @@ a {
     margin: 0.5rem;
 }
 
-small {
+.component-title {
+    font-size: 4rem;
+    margin: 1.5rem 0;
+}
+
+.component-subtitle {
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+}
+
+.component-description {
+    font-size: 1.5rem;
     line-height: 1.5;
+    margin: 1.5rem 0;
+    max-width: 100%;
+}
+
+.main-link {
+    font-size: 2rem;
+}
+
+.sub-link {
+    font-weight: unset;
 }
