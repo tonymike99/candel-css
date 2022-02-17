@@ -32,6 +32,38 @@
     top: 50%;
 }
 
+.badge-center-right {
+    bottom: unset;
+    left: unset;
+    right: 0;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+.badge-center-left {
+    bottom: unset;
+    left: 0;
+    right: unset;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+.badge-center-top {
+    bottom: unset;
+    left: 50%;
+    right: unset;
+    transform: translate(-50%, -50%);
+    top: 0%;
+}
+
+.badge-center-bottom {
+    bottom: 0;
+    left: 50%;
+    right: unset;
+    transform: translate(-50%, -50%);
+    top: unset;
+}
+
 .badge-outside-top-right {
     bottom: unset;
     left: unset;
