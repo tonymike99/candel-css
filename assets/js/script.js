@@ -64,3 +64,7 @@ loadingAttribute.value = 'lazy';
 document
     .getElementsByTagName('iframe')
     .map((iframeEle) => iframeEle.setAttributeNode(loadingAttribute));
+
+document
+    .getElementsByTagName('img')
+    .map((imgEle) => imgEle.setAttributeNode(loadingAttribute));

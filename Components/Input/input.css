@@ -11,9 +11,7 @@ input {
 }
 
 input {
-    font-size: large;
     padding: 5px;
-    width: 25rem;
 }
 
 .floating-label {
