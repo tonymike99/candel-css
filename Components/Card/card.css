@@ -42,7 +42,7 @@
 .card-stretched {
     align-items: unset;
     justify-content: unset;
-    max-width: 75rem;
+    max-width: 90%;
 }
 
 .card-stretched .card-left-content {

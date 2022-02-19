@@ -1,17 +1,11 @@
-.form-element {
-    display: inline-block;
-    margin: 1rem;
-    position: relative;
-}
-
-label,
-input {
-    display: block;
-    margin: 1rem 0;
-}
-
-input {
-    padding: 5px;
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='password'] {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 5rem;
+    border: 1px solid grey;
 }
 
 .floating-label {
@@ -21,7 +15,8 @@ input {
     left: 5%;
     padding: 0 5px;
     position: absolute;
-    top: -15%;
+    top: -12%;
+    border-radius: 5px;
 }
 
 .input-inline-block {
