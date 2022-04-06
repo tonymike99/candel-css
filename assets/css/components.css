@@ -12,6 +12,7 @@
 @import url("/Components/List/list.css");
 @import url("/Components/Text/text.css");
 @import url("/Components/Rating/rating.css");
+@import url("/Components/Grid/grid.css");
 
 section {
     margin: 3rem 1rem;
