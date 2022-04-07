@@ -22,6 +22,9 @@ It is completely based on HTML and CSS.
 9. [Toast](https://candel-css.netlify.app/docs.html#toast)
 10. [List](https://candel-css.netlify.app/docs.html#list)
 11. [Text](https://candel-css.netlify.app/docs.html#text)
+12. [Rating](https://candel-css.netlify.app/docs.html#rating)
+13. [Grid](https://candel-css.netlify.app/docs.html#grid)
+14. [Navigation](https://candel-css.netlify.app/docs.html#navigation)
 
 ---
 
