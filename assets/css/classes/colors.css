@@ -1,0 +1,99 @@
+/* SOLID */
+
+.primary {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+}
+
+.success {
+  background-color: var(--success-color);
+  color: var(--light-color);
+}
+
+.danger {
+  background-color: var(--danger-color);
+  color: var(--light-color);
+}
+
+.warning {
+  background-color: var(--warning-color);
+  color: var(--dark-color);
+}
+
+.info {
+  background-color: var(--info-color);
+  color: var(--light-color);
+}
+
+.light {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.dark {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* OUTLINE */
+
+.primary-outline {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.secondary-outline {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.success-outline {
+  border: 1px solid var(--success-color);
+  color: var(--success-color);
+}
+
+.danger-outline {
+  border: 1px solid var(--danger-color);
+  color: var(--danger-color);
+}
+
+.warning-outline {
+  border: 1px solid var(--warning-color);
+  color: var(--warning-color);
+}
+
+.info-outline {
+  border: 1px solid var(--info-color);
+  color: var(--info-color);
+}
+
+.light-outline {
+  border: 1px solid var(--light-color);
+  color: var(--muted-color);
+}
+
+.dark-outline {
+  border: 1px solid var(--dark-color);
+  color: var(--dark-color);
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.gold {
+  color: gold;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
