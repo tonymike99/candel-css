@@ -1,5 +1,5 @@
 .avatar {
-    border-radius: 5px;
-    width: 8rem;
-    /* By default, avatar is md and square */
+  max-width: 10rem;
+  border-radius: 5px;
+  /* By default, avatar is md and square */
 }

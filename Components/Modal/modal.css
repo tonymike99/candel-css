@@ -1,24 +1,20 @@
 .modal {
-    left: 50%;
-    opacity: 0;
-    pointer-events: auto;
-    position: fixed;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.2s ease;
-    top: 50%;
-    visibility: hidden;
-    z-index: -1;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-visible {
-    background-color: var(--light-color);
-    opacity: 1;
-    visibility: visible;
-    z-index: 1;
+  display: block;
 }
 
-.modal-overlay {
-    background-color: rgba(0, 0, 0, 0.2);
-    height: 100%;
-    pointer-events: none;
+.card-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
