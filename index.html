@@ -1,162 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Candel CSS</title>
-        <link
-            rel="shortcut icon"
-            type="image/png"
-            href="/assets/img/logo.png"
-        />
-        <link rel="stylesheet" href="/assets/css/index.css" />
-        <script
-            src="https://kit.fontawesome.com/dc21c76de2.js"
-            crossorigin="anonymous"
-        ></script>
-    </head>
-    <body>
-        <div class="main-container">
-            <header>
-                <div class="brand-container">
-                    <a class="brand-name" href="/index.html">Candel CSS</a>
-                </div>
-                <nav class="navbar-menu">
-                    <ul class="list list-spaced list-navbar">
-                        <li>
-                            <a class="styled-link" href="/index.html">Home</a>
-                        </li>
-                        <li>
-                            <a class="styled-link" href="/docs.html">Docs</a>
-                        </li>
-                        <li>
-                            <a
-                                class="styled-link"
-                                href="/assets/css/components.css"
-                                target="_blank"
-                                download
-                                >Download</a
-                            >
-                        </li>
-                        <li>|</li>
-                        <li>
-                            <a
-                                class="styled-link"
-                                href="https://github.com/tonymike99/candel-css"
-                                target="_blank"
-                                ><i class="fab fa-github fa-lg"></i
-                            ></a>
-                        </li>
-                        <li>
-                            <a class="styled-link" href="#"
-                                ><i id="theme-icon" class="fas fa-sun fa-lg"></i
-                            ></a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candel CSS - Home</title>
+    <link rel="shortcut icon" type="image/png" href="/assets/img/logo.png" />
+    <link rel="stylesheet" href="/assets/css/page-styles/index.css" />
+    <script defer src="/assets/js/script.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+    ></script>
+  </head>
 
-            <main>
-                <h1 class="hero-title">Fast. Minimal. Lightweight.</h1>
+  <body>
+    <div id="loader-wrapper">
+      <lottie-player
+        src="https://assets4.lottiefiles.com/datafiles/nT4vnUFY9yay7QI/data.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+        style="width: 300px; height: 300px"
+      ></lottie-player>
+    </div>
 
-                <p class="hero-subtitle">
-                    <strong>Candel CSS</strong> is a free, open-source CSS
-                    framework that provides ready-to-use frontend components to
-                    build responsive and modern websites.
-                </p>
+    <div class="main-container">
+      <header class="header">
+        <a class="brand-name" href="/index.html">Candel CSS</a>
 
-                <div class="hero-buttons">
-                    <a class="btn btn-primary btn-link" href="/docs.html"
-                        >Get Started</a
-                    >
+        <nav>
+          <ul class="list list-horizontal">
+            <li>
+              <a class="styled-link" href="/index.html">Home</a>
+            </li>
+            <li>
+              <a class="styled-link" href="/docs.html">Docs</a>
+            </li>
+            <li>
+              <a
+                class="styled-link"
+                href="/assets/css/components.css"
+                target="_blank"
+                download
+                >Download</a
+              >
+            </li>
+            <li>|</li>
+            <li>
+              <a
+                class="styled-link"
+                href="https://github.com/tonymike99/candel-css"
+                target="_blank"
+                ><i class="fab fa-github fa-lg"></i
+              ></a>
+            </li>
+            <li>
+              <a class="styled-link" href="#"
+                ><i id="theme-icon" class="fas fa-sun fa-lg"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-                    <a
-                        class="btn btn-secondary-outline btn-link"
-                        href="/assets/css/components.css"
-                        target="_blank"
-                        download
-                        >Download</a
-                    >
-                </div>
-            </main>
+      <main class="main">
+        <h1 class="h1">Fast. Minimal. Lightweight.</h1>
 
-            <footer>
-                <div class="footer-subtitle">
-                    <small
-                        >Made with
-                        <span style="color: red"
-                            ><i class="fas fa-heart"></i
-                        ></span>
-                        and
-                        <span style="color: #15aabf"
-                            ><i class="fas fa-code"></i
-                        ></span>
-                        by</small
-                    >
-                </div>
+        <p class="hero-description">
+          <span class="text-bold">Candel CSS</span> is a free, open-source CSS
+          framework that provides ready-to-use frontend components to build
+          responsive and modern websites.
+        </p>
 
-                <div class="my-name">Tony Mike Auxen</div>
+        <div class="hero-buttons">
+          <a class="btn btn-primary btn-link" href="/docs.html">Get Started</a>
+          <a
+            class="btn btn-secondary-outline btn-link"
+            href="/assets/css/components.css"
+            target="_blank"
+            download
+            >Download</a
+          >
+        </div>
+      </main>
 
-                <div class="footer-icons">
-                    <a
-                        class="social-icon"
-                        href="https://github.com/tonymike99/"
-                        target="_blank"
-                        ><i
-                            class="fab fa-github fa-lg"
-                            aria-hidden="true"
-                            style="color: white"
-                        ></i
-                    ></a>
+      <footer class="footer">
+        <small>
+          Made with
+          <i class="fa-solid fa-heart color-heart"></i>
+          and
+          <i class="fa-solid fa-code color-code"></i>
+          by
+        </small>
 
-                    <a
-                        class="social-icon"
-                        href="https://linkedin.com/in/tonymike99"
-                        target="_blank"
-                    >
-                        <i
-                            class="fab fa-linkedin-in fa-lg"
-                            aria-hidden="true"
-                            style="
-                                border-radius: 2px;
-                                margin: 0;
-                                padding: 4px 4px;
-                                color: white;
-                                background-color: #0a66c2;
-                            "
-                        ></i
-                    ></a>
+        <span class="my-name">Tony Mike Auxen</span>
 
-                    <a
-                        class="social-icon"
-                        href="https://twitter.com/tonymike07"
-                        target="_blank"
-                        ><i
-                            class="fab fa-twitter fa-lg"
-                            aria-hidden="true"
-                            style="color: #5aa4d6"
-                        ></i
-                    ></a>
+        <div class="footer-icons">
+          <a
+            href="https://github.com/tonymike99/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i
+              class="fa-brands fa-github fa-lg color-github"
+              aria-hidden="true"
+            ></i>
+          </a>
 
-                    <a
-                        class="social-icon"
-                        href="mailto:tonymike99@gmail.com"
-                        target="_blank"
-                        ><i
-                            class="fas fa-envelope fa-lg"
-                            aria-hidden="true"
-                            style="color: white"
-                        ></i
-                    ></a>
-                </div>
+          <a
+            href="https://linkedin.com/in/tonymike99"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i
+              class="fa-brands fa-linkedin fa-lg color-linkedin"
+              aria-hidden="true"
+            ></i>
+          </a>
 
-                <div class="footer-copyright">
-                    <small>No copyright &copy issues. Feel free to copy.</small>
-                </div>
-            </footer>
+          <a
+            href="https://twitter.com/tonymike07"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i
+              class="fa-brands fa-twitter fa-lg color-twitter"
+              aria-hidden="true"
+            ></i>
+          </a>
+
+          <a
+            href="https://facebook.com/profile.php?id=100009973660727"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i
+              class="fa-brands fa-facebook fa-lg color-facebook"
+              aria-hidden="true"
+            ></i>
+          </a>
+
+          <a
+            href="https://instagram.com/tonymike99"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i
+              class="fa-brands fa-instagram fa-lg color-instagram"
+              aria-hidden="true"
+            ></i>
+          </a>
+
+          <a
+            href="https://stackoverflow.com/users/15880393/tony-mike"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i
+              class="fa-brands fa-stack-overflow fa-lg color-stackoverflow"
+              aria-hidden="true"
+            ></i>
+          </a>
+
+          <a
+            href="https://hashnode.com/@tonymike99"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i
+              class="fa-brands fa-hashnode fa-lg color-hashnode"
+              aria-hidden="true"
+            ></i>
+          </a>
+
+          <a
+            href="https://medium.com/@tonymike99"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i
+              class="fa-brands fa-medium fa-lg color-medium"
+              aria-hidden="true"
+            ></i>
+          </a>
+
+          <a
+            href="mailto:tonymike99@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i
+              class="fa-solid fa-envelope fa-lg color-email"
+              aria-hidden="true"
+            ></i>
+          </a>
         </div>
 
-        <script src="/assets/js/script.js"></script>
-    </body>
+        <small>No copyright © issues. Feel free to copy.</small>
+      </footer>
+    </div>
+  </body>
 </html>
