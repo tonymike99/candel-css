@@ -94,61 +94,61 @@
 /* ---------------------------------------------------------------------------------------------------- */
 
 .badge-outside-top-right {
+  top: -10%;
+  right: -20%;
   bottom: unset;
   left: unset;
-  right: -20%;
-  top: -10%;
 }
 
 .badge-outside-top-left {
+  top: -10%;
+  right: unset;
   bottom: unset;
   left: -20%;
-  right: unset;
-  top: -10%;
 }
 
 .badge-outside-bottom-right {
+  top: unset;
+  right: -20%;
   bottom: -10%;
   left: unset;
-  right: -20%;
-  top: unset;
 }
 
 .badge-outside-bottom-left {
+  top: unset;
+  right: unset;
   bottom: -10%;
   left: -20%;
-  right: unset;
-  top: unset;
 }
 
 /* ---------------------------------------------------------------------------------------------------- */
 
 .badge-inside-top-right {
+  top: 1rem;
+  right: 1rem;
   bottom: unset;
   left: unset;
-  right: 1rem;
-  top: 1rem;
 }
 
 .badge-inside-top-left {
+  top: 1rem;
+  right: unset;
   bottom: unset;
   left: 0;
-  right: unset;
-  top: 1rem;
 }
 
 .badge-inside-bottom-right {
+  top: unset;
+  right: 0;
   bottom: 1rem;
   left: unset;
-  right: 0;
-  top: unset;
 }
 
 .badge-inside-bottom-left {
+  top: unset;
+  right: unset;
   bottom: 1rem;
   left: 0;
-  right: unset;
-  top: unset;
 }
 
 /* ---------------------------------------------------------------------------------------------------- */

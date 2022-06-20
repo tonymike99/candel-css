@@ -8,6 +8,7 @@
 
 /* ---------------------------------------------------------------------------------------------------- */
 
+/* LOADER STYLES */
 #loader-wrapper {
   display: flex;
   justify-content: center;
@@ -19,6 +20,8 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+/* ---------------------------------------------------------------------------------------------------- */
 
 /* LAYOUT STYLES */
 .main-container {
@@ -65,11 +68,12 @@ body {
 .footer {
   grid-area: footer;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  padding: 3rem 0;
+  padding: 3rem 1.5rem;
   background-color: var(--dark-color);
   color: var(--light-color);
 }
@@ -79,13 +83,12 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   height: 0;
-  width: 90%;
+  width: 100%;
 }
 
 .styled-link {
   color: inherit;
   font-weight: bold;
-  text-decoration: none;
 }
 
 .styled-link:hover {
@@ -123,6 +126,7 @@ p {
 
 .footer-icons {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
@@ -152,6 +156,7 @@ p {
   header {
     flex-direction: column;
     justify-content: center;
+    gap: 1rem;
   }
 }
 
