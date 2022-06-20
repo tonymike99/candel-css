@@ -1,5 +1,19 @@
-@import url("/assets/css/styles-default.css");
+/* FONT STYLES */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;900&display=swap");
 
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* FONT-AWESOME */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* RESET STYLES */
+@import url("/assets/css/reset.css");
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* COMPONENT STYLES */
 @import url("/Components/Alert/alert.css");
 @import url("/Components/Avatar/avatar.css");
 @import url("/Components/Badge/badge.css");
@@ -15,143 +29,39 @@
 @import url("/Components/Grid/grid.css");
 @import url("/Components/Navigation/navigation.css");
 
-section {
-    margin: 3rem 1rem;
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* CLASS STYLES */
+@import url("./classes/colors.css");
+@import url("./classes/extra.css");
+@import url("./classes/positions.css");
+@import url("./classes/sizes-and-shapes.css");
+@import url("./classes/spacing.css");
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --success-color: #198754;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #0dcaf0;
+  --light-color: #f8f9fa;
+  --dark-color: #05103a;
+  --muted-color: #6c757d;
+
+  --primary-hover: #0b5ed7;
+  --secondary-hover: #5c636a;
+  --success-hover: #157347;
+  --danger-hover: #bb2d3b;
+  --warning-hover: #ffca2c;
+  --info-hover: #31d2f2;
+  --light-hover: #f9fafb;
+  --dark-hover: #1c1f23;
+
+  --light-mode: #f8f9fa;
+  --dark-mode: #05103a;
 }
 
-.container {
-    background-color: var(--light-hover);
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    margin: 3rem 0;
-    padding: 2rem;
-}
-
-.relative {
-    display: inline-block;
-    position: relative;
-}
-
-.absolute {
-    position: absolute;
-}
-
-.margin-1 {
-    margin: 1rem;
-}
-
-.margin-2 {
-    margin: 2rem;
-}
-
-.margin-bottom-2 {
-    margin-bottom: 2rem;
-}
-
-.padding-1 {
-    padding: 1rem;
-}
-
-.padding-2 {
-    padding: 2rem;
-}
-
-.sm {
-    width: 5rem;
-}
-
-.md {
-    width: 7.5rem;
-}
-
-.lg {
-    width: 10rem;
-}
-
-.square {
-    border-radius: 5px;
-}
-
-.round {
-    border-radius: 50%;
-}
-
-.primary {
-    background-color: var(--primary-color);
-    color: var(--light-color);
-}
-
-.secondary {
-    background-color: var(--secondary-color);
-    color: var(--light-color);
-}
-
-.success {
-    background-color: var(--success-color);
-    color: var(--light-color);
-}
-
-.danger {
-    background-color: var(--danger-color);
-    color: var(--light-color);
-}
-
-.warning {
-    background-color: var(--warning-color);
-    color: var(--dark-color);
-}
-
-.info {
-    background-color: var(--info-color);
-    color: var(--light-color);
-}
-
-.light {
-    background-color: var(--light-color);
-    color: var(--dark-color);
-}
-
-.dark {
-    background-color: var(--dark-color);
-    color: var(--light-color);
-}
-
-.primary-outline {
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
-}
-
-.secondary-outline {
-    border: 1px solid var(--secondary-color);
-    color: var(--secondary-color);
-}
-
-.success-outline {
-    border: 1px solid var(--success-color);
-    color: var(--success-color);
-}
-
-.danger-outline {
-    border: 1px solid var(--danger-color);
-    color: var(--danger-color);
-}
-
-.warning-outline {
-    border: 1px solid var(--warning-color);
-    color: var(--warning-color);
-}
-
-.info-outline {
-    border: 1px solid var(--info-color);
-    color: var(--info-color);
-}
-
-.light-outline {
-    border: 1px solid var(--light-color);
-    color: var(--muted-color);
-}
-
-.dark-outline {
-    border: 1px solid var(--dark-color);
-    color: var(--dark-color);
-}
+/* ---------------------------------------------------------------------------------------------------- */
