@@ -1,0 +1,80 @@
+/* COMMON STYLES */
+@import url("/assets/css/page-styles/common.css");
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* LAYOUT STYLES */
+.main-container {
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+  grid-template-columns: repeat(2, auto);
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.container {
+  box-shadow: 0 0 10px #ccc;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2.5rem 0;
+}
+
+.flex-container {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.color-palette {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-palette > * {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+
+.grid-item {
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.main > .h1::after {
+  content: " ⭐";
+  color: yellowgreen;
+}
+
+a:hover {
+  transition: all 0.4s ease;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+  .color-palette > * {
+    writing-mode: vertical-rl;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    grid-template-areas:
+      "header header"
+      "aside aside"
+      "main main"
+      "footer footer";
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+iframe {
+  display: none;
+}
