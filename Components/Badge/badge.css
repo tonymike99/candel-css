@@ -51,7 +51,7 @@
 
 /* ---------------------------------------------------------------------------------------------------- */
 
-.badge-center {
+.badge-inside-center {
   top: 50%;
   right: unset;
   bottom: unset;
@@ -59,7 +59,7 @@
   transform: translate(-50%, -50%);
 }
 
-.badge-center-right {
+.badge-inside-center-right {
   top: 50%;
   right: 0;
   bottom: unset;
@@ -67,7 +67,7 @@
   transform: translate(-50%, -50%);
 }
 
-.badge-center-left {
+.badge-inside-center-left {
   top: 50%;
   right: unset;
   bottom: unset;
@@ -75,7 +75,7 @@
   transform: translate(-50%, -50%);
 }
 
-.badge-center-top {
+.badge-inside-center-top {
   top: 0%;
   right: unset;
   bottom: unset;
@@ -83,42 +83,12 @@
   transform: translate(-50%, -50%);
 }
 
-.badge-center-bottom {
+.badge-inside-center-bottom {
   top: unset;
   right: unset;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-/* ---------------------------------------------------------------------------------------------------- */
-
-.badge-outside-top-right {
-  top: -10%;
-  right: -20%;
-  bottom: unset;
-  left: unset;
-}
-
-.badge-outside-top-left {
-  top: -10%;
-  right: unset;
-  bottom: unset;
-  left: -20%;
-}
-
-.badge-outside-bottom-right {
-  top: unset;
-  right: -20%;
-  bottom: -10%;
-  left: unset;
-}
-
-.badge-outside-bottom-left {
-  top: unset;
-  right: unset;
-  bottom: -10%;
-  left: -20%;
 }
 
 /* ---------------------------------------------------------------------------------------------------- */
@@ -153,26 +123,32 @@
 
 /* ---------------------------------------------------------------------------------------------------- */
 
-.badge-inside-top-stretch {
+.badge-top-right {
+  top: -10%;
+  right: -20%;
   bottom: unset;
-  left: 0;
-  right: 0;
-  text-align: center;
-  top: 1rem;
+  left: unset;
 }
 
-.badge-inside-bottom-stretch {
-  bottom: 1rem;
-  left: 0;
-  right: 0;
-  text-align: center;
+.badge-top-left {
+  top: -10%;
+  right: unset;
+  bottom: unset;
+  left: -20%;
+}
+
+.badge-bottom-right {
   top: unset;
+  right: -20%;
+  bottom: -10%;
+  left: unset;
 }
 
-.badge-inside-center-stretch {
-  bottom: unset;
-  left: 0;
-  right: 0;
-  text-align: center;
-  top: 45%;
+.badge-bottom-left {
+  top: unset;
+  right: unset;
+  bottom: -10%;
+  left: -20%;
 }
+
+/* ---------------------------------------------------------------------------------------------------- */
