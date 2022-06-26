@@ -152,3 +152,32 @@
 .btn-width-100 {
   width: 100%;
 }
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.btn-light-theme {
+  background-color: var(--light-mode);
+  color: var(--dark-mode);
+}
+
+.btn-light-theme-outline {
+  border: 1px solid var(--dark-mode);
+}
+
+.btn-dark-theme {
+  background-color: var(--dark-mode);
+  color: var(--light-mode);
+}
+
+.btn-dark-theme-outline {
+  border: 1px solid var(--light-mode);
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.disabled {
+  background-color: rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */

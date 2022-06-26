@@ -6,6 +6,11 @@ input[type="password"] {
   border-radius: 2rem;
   border: 2px solid gray;
   display: inline-block;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
 }
 
 .form {
