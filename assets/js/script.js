@@ -41,3 +41,15 @@ window.addEventListener("load", () => {
 });
 
 /* ---------------------------------------------------------------------------------------------------- */
+
+// Lazy load for img and iframe
+
+Array.from(document.getElementsByTagName("img")).map((imgEle) =>
+  imgEle.setAttribute("loading", "lazy")
+);
+
+Array.from(document.getElementsByTagName("iframe")).map((iframeEle) =>
+  iframeEle.setAttribute("loading", "lazy")
+);
+
+/* ---------------------------------------------------------------------------------------------------- */
