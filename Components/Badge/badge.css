@@ -1,167 +1,178 @@
 .badge {
-    background-color: transparent;
-    border-radius: 5px;
-    color: black;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 5px;
-    position: absolute;
-    text-align: center;
-    /* By default, badge is md and square  */
+  position: absolute;
+  background-color: var(--light-color);
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 6px;
+  /* By default, badge is md and square  */
 }
 
+/* ---------------------------------------------------------------------------------------------------- */
+
 .badge-sm {
-    font-size: 0.75rem;
-    padding: 3px;
+  font-size: 0.75rem;
+  padding: 5px;
 }
 
 .badge-md {
-    font-size: 1rem;
-    padding: 5px;
+  font-size: 1rem;
+  padding: 6px;
 }
 
 .badge-lg {
-    font-size: 1.25rem;
-    padding: 7px;
+  font-size: 1.25rem;
+  padding: 7px;
 }
 
-.badge-center {
-    bottom: unset;
-    left: 50%;
-    right: unset;
-    transform: translate(-50%, -50%);
-    top: 50%;
-}
-
-.badge-center-right {
-    bottom: unset;
-    left: unset;
-    right: 0;
-    transform: translate(-50%, -50%);
-    top: 50%;
-}
-
-.badge-center-left {
-    bottom: unset;
-    left: 0;
-    right: unset;
-    transform: translate(-50%, -50%);
-    top: 50%;
-}
-
-.badge-center-top {
-    bottom: unset;
-    left: 50%;
-    right: unset;
-    transform: translate(-50%, -50%);
-    top: 0%;
-}
-
-.badge-center-bottom {
-    bottom: 0;
-    left: 50%;
-    right: unset;
-    transform: translate(-50%, -50%);
-    top: unset;
-}
-
-.badge-outside-top-right {
-    bottom: unset;
-    left: unset;
-    right: -20%;
-    top: -10%;
-}
-
-.badge-outside-top-left {
-    bottom: unset;
-    left: -20%;
-    right: unset;
-    top: -10%;
-}
-
-.badge-outside-bottom-right {
-    bottom: -10%;
-    left: unset;
-    right: -20%;
-    top: unset;
-}
-
-.badge-outside-bottom-left {
-    bottom: -10%;
-    left: -20%;
-    right: unset;
-    top: unset;
-}
-
-.badge-inside-top-right {
-    bottom: unset;
-    left: unset;
-    right: 1rem;
-    top: 1rem;
-}
-
-.badge-inside-top-left {
-    bottom: unset;
-    left: 0;
-    right: unset;
-    top: 1rem;
-}
-
-.badge-inside-bottom-right {
-    bottom: 1rem;
-    left: unset;
-    right: 0;
-    top: unset;
-}
-
-.badge-inside-bottom-left {
-    bottom: 1rem;
-    left: 0;
-    right: unset;
-    top: unset;
-}
-
-.badge-inside-top-stretch {
-    bottom: unset;
-    left: 0;
-    right: 0;
-    text-align: center;
-    top: 1rem;
-}
-
-.badge-inside-bottom-stretch {
-    bottom: 1rem;
-    left: 0;
-    right: 0;
-    text-align: center;
-    top: unset;
-}
-
-.badge-inside-center-stretch {
-    bottom: unset;
-    left: 0;
-    right: 0;
-    text-align: center;
-    top: 45%;
-}
+/* ---------------------------------------------------------------------------------------------------- */
 
 .badge-online {
-    background-color: var(--warning-color);
-    border: 2px solid white;
-    bottom: 5%;
-    right: 5%;
+  background-color: var(--warning-color);
+  border: 2px solid var(--light-color);
+  bottom: 5%;
+  right: 5%;
 }
 
 .badge-busy {
-    background-color: var(--danger-color);
-    border: 2px solid white;
-    bottom: 5%;
-    right: 5%;
+  background-color: var(--danger-color);
+  border: 2px solid var(--light-color);
+  bottom: 5%;
+  right: 5%;
 }
 
 .badge-offline {
-    background-color: var(--dark-color);
-    border: 2px solid white;
-    bottom: 5%;
-    right: 5%;
+  background-color: var(--dark-color);
+  border: 2px solid var(--light-color);
+  bottom: 5%;
+  right: 5%;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.badge-center {
+  top: 50%;
+  right: unset;
+  bottom: unset;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.badge-center-right {
+  top: 50%;
+  right: 0;
+  bottom: unset;
+  left: unset;
+  transform: translate(-50%, -50%);
+}
+
+.badge-center-left {
+  top: 50%;
+  right: unset;
+  bottom: unset;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.badge-center-top {
+  top: 0%;
+  right: unset;
+  bottom: unset;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.badge-center-bottom {
+  top: unset;
+  right: unset;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.badge-outside-top-right {
+  bottom: unset;
+  left: unset;
+  right: -20%;
+  top: -10%;
+}
+
+.badge-outside-top-left {
+  bottom: unset;
+  left: -20%;
+  right: unset;
+  top: -10%;
+}
+
+.badge-outside-bottom-right {
+  bottom: -10%;
+  left: unset;
+  right: -20%;
+  top: unset;
+}
+
+.badge-outside-bottom-left {
+  bottom: -10%;
+  left: -20%;
+  right: unset;
+  top: unset;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.badge-inside-top-right {
+  bottom: unset;
+  left: unset;
+  right: 1rem;
+  top: 1rem;
+}
+
+.badge-inside-top-left {
+  bottom: unset;
+  left: 0;
+  right: unset;
+  top: 1rem;
+}
+
+.badge-inside-bottom-right {
+  bottom: 1rem;
+  left: unset;
+  right: 0;
+  top: unset;
+}
+
+.badge-inside-bottom-left {
+  bottom: 1rem;
+  left: 0;
+  right: unset;
+  top: unset;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.badge-inside-top-stretch {
+  bottom: unset;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 1rem;
+}
+
+.badge-inside-bottom-stretch {
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: unset;
+}
+
+.badge-inside-center-stretch {
+  bottom: unset;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 45%;
 }

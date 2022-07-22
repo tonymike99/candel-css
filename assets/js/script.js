@@ -1,70 +1,43 @@
 // <!-- Dark mode -->
 
-const themeIcon = document.getElementById('theme-icon');
+const themeIcon = document.getElementById("theme-icon");
 
-themeIcon.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme');
-    if (document.body.classList.contains('dark-theme')) {
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
-    } else {
-        themeIcon.classList.add('fa-sun');
-        themeIcon.classList.remove('fa-moon');
-    }
+let storedTheme = localStorage.getItem("theme");
+if (storedTheme != null && storedTheme == "dark-theme") {
+  document.body.classList.add(storedTheme);
+  themeIcon.classList.remove("fa-sun");
+  themeIcon.classList.add("fa-moon");
+}
+
+themeIcon.addEventListener("click", () => {
+  let storedTheme = localStorage.getItem("theme");
+
+  if (storedTheme == null) localStorage.setItem("theme", "dark-theme");
+  else if (storedTheme == "dark-theme") localStorage.setItem("theme", "");
+  else if (storedTheme == "") localStorage.setItem("theme", "dark-theme");
+
+  let newStoredTheme = localStorage.getItem("theme");
+
+  if (newStoredTheme == "dark-theme") document.body.classList.add("dark-theme");
+  else if (newStoredTheme == "") document.body.classList.remove("dark-theme");
+
+  if (document.body.classList.contains("dark-theme")) {
+    themeIcon.classList.remove("fa-sun");
+    themeIcon.classList.add("fa-moon");
+  } else {
+    themeIcon.classList.add("fa-sun");
+    themeIcon.classList.remove("fa-moon");
+  }
 });
 
-// <!-- Modal -->
+/* ---------------------------------------------------------------------------------------------------- */
 
-const modalOpen = document.getElementById('modal-open');
-const modalClose = document.getElementById('modal-close');
-const modal = document.getElementsByClassName('modal')[0];
+// Loader
 
-modalOpen.addEventListener('click', () => {
-    modal.classList.add('modal-visible');
-    document.body.classList.add('modal-overlay');
+const loaderWrapper = document.getElementById("loader-wrapper");
+
+window.addEventListener("load", () => {
+  loaderWrapper.style.display = "none";
 });
 
-modalClose.addEventListener('click', () => {
-    modal.classList.remove('modal-visible');
-    document.body.classList.remove('modal-overlay');
-});
-
-// <!-- Toast -->
-
-// Primary toast
-
-const toastPrimaryBtn = document.getElementById('toast-primary');
-const toast1 = document.getElementById('toast1');
-
-toastPrimaryBtn.addEventListener('click', () => {
-    toast1.classList.add('toast-visible');
-});
-
-toast1.addEventListener('click', () => {
-    toast1.classList.remove('toast-visible');
-});
-
-// Danger toast
-
-const toastDangerBtn = document.getElementById('toast-danger');
-const toast2 = document.getElementById('toast2');
-
-toastDangerBtn.addEventListener('click', () => {
-    toast2.classList.add('toast-visible');
-});
-
-toast2.addEventListener('click', () => {
-    toast2.classList.remove('toast-visible');
-});
-
-// <!-- Loading lazy -->
-
-const loadingAttribute = document.createAttribute('loading');
-loadingAttribute.value = 'lazy';
-document
-    .getElementsByTagName('iframe')
-    .map((iframeEle) => iframeEle.setAttributeNode(loadingAttribute));
-
-document
-    .getElementsByTagName('img')
-    .map((imgEle) => imgEle.setAttributeNode(loadingAttribute));
+/* ---------------------------------------------------------------------------------------------------- */

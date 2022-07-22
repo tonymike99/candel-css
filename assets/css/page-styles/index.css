@@ -1,0 +1,33 @@
+/* COMMON STYLES */
+@import url("/assets/css/page-styles/common.css");
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* LAYOUT STYLES */
+.main-container {
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: auto;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* PAGE STYLES */
+.main {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-description {
+  max-width: 50rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
