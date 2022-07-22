@@ -32,11 +32,11 @@
 /* ---------------------------------------------------------------------------------------------------- */
 
 /* CLASS STYLES */
-@import url("./classes/colors.css");
-@import url("./classes/extra.css");
-@import url("./classes/positions.css");
-@import url("./classes/sizes-and-shapes.css");
-@import url("./classes/spacing.css");
+@import url("/assets/css/classes/colors.css");
+@import url("/assets/css/classes/extra.css");
+@import url("/assets/css/classes/positions.css");
+@import url("/assets/css/classes/sizes-and-shapes.css");
+@import url("/assets/css/classes/spacing.css");
 
 /* ---------------------------------------------------------------------------------------------------- */
 

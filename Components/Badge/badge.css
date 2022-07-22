@@ -51,7 +51,7 @@
 
 /* ---------------------------------------------------------------------------------------------------- */
 
-.badge-center {
+.badge-inside-center {
   top: 50%;
   right: unset;
   bottom: unset;
@@ -59,7 +59,7 @@
   transform: translate(-50%, -50%);
 }
 
-.badge-center-right {
+.badge-inside-center-right {
   top: 50%;
   right: 0;
   bottom: unset;
@@ -67,7 +67,7 @@
   transform: translate(-50%, -50%);
 }
 
-.badge-center-left {
+.badge-inside-center-left {
   top: 50%;
   right: unset;
   bottom: unset;
@@ -75,7 +75,7 @@
   transform: translate(-50%, -50%);
 }
 
-.badge-center-top {
+.badge-inside-center-top {
   top: 0%;
   right: unset;
   bottom: unset;
@@ -83,7 +83,7 @@
   transform: translate(-50%, -50%);
 }
 
-.badge-center-bottom {
+.badge-inside-center-bottom {
   top: unset;
   right: unset;
   bottom: 0;
@@ -93,86 +93,62 @@
 
 /* ---------------------------------------------------------------------------------------------------- */
 
-.badge-outside-top-right {
-  bottom: unset;
-  left: unset;
-  right: -20%;
-  top: -10%;
-}
-
-.badge-outside-top-left {
-  bottom: unset;
-  left: -20%;
-  right: unset;
-  top: -10%;
-}
-
-.badge-outside-bottom-right {
-  bottom: -10%;
-  left: unset;
-  right: -20%;
-  top: unset;
-}
-
-.badge-outside-bottom-left {
-  bottom: -10%;
-  left: -20%;
-  right: unset;
-  top: unset;
-}
-
-/* ---------------------------------------------------------------------------------------------------- */
-
 .badge-inside-top-right {
+  top: 1rem;
+  right: 1rem;
   bottom: unset;
   left: unset;
-  right: 1rem;
-  top: 1rem;
 }
 
 .badge-inside-top-left {
+  top: 1rem;
+  right: unset;
   bottom: unset;
   left: 0;
-  right: unset;
-  top: 1rem;
 }
 
 .badge-inside-bottom-right {
+  top: unset;
+  right: 0;
   bottom: 1rem;
   left: unset;
-  right: 0;
-  top: unset;
 }
 
 .badge-inside-bottom-left {
+  top: unset;
+  right: unset;
   bottom: 1rem;
   left: 0;
-  right: unset;
-  top: unset;
 }
 
 /* ---------------------------------------------------------------------------------------------------- */
 
-.badge-inside-top-stretch {
+.badge-top-right {
+  top: -10%;
+  right: -20%;
   bottom: unset;
-  left: 0;
-  right: 0;
-  text-align: center;
-  top: 1rem;
+  left: unset;
 }
 
-.badge-inside-bottom-stretch {
-  bottom: 1rem;
-  left: 0;
-  right: 0;
-  text-align: center;
+.badge-top-left {
+  top: -10%;
+  right: unset;
+  bottom: unset;
+  left: -20%;
+}
+
+.badge-bottom-right {
   top: unset;
+  right: -20%;
+  bottom: -10%;
+  left: unset;
 }
 
-.badge-inside-center-stretch {
-  bottom: unset;
-  left: 0;
-  right: 0;
-  text-align: center;
-  top: 45%;
+.badge-bottom-left {
+  top: unset;
+  right: unset;
+  bottom: -10%;
+  left: -20%;
 }
+
+/* ---------------------------------------------------------------------------------------------------- */

@@ -86,14 +86,18 @@
 
 /* ---------------------------------------------------------------------------------------------------- */
 
-.gold {
+.color-gold {
   color: gold;
 }
 
-.white {
+.color-white {
   color: white;
 }
 
-.black {
+.color-black {
   color: black;
+}
+
+.color-blue {
+  color: blue;
 }
